@@ -1,0 +1,333 @@
+What configuration are you using (A-E): e
+What output destination do you want: output
+~~~~~~~~~~~~~~~~
+KA can get 0.7840693098114699
+Strategy generated, there are: 2653 transitions.
+
+KW can get 0.7771097348906725
+Strategy generated, there are: 3403 transitions.
+
+AW can get 0.631668836479385
+Strategy generated, there are: 2165 transitions.
+
+KA is the meta after 0 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.9971301781288724
+Of 2653 actions, 505 were seen and 466 have changed.
+
+KW can get 0.9999999999876832
+Of 3403 actions, 650 were seen and 650 have changed.
+
+AW can get 0.9976173305436149
+Of 2165 actions, 434 were seen and 329 have changed.
+
+KW is the meta after 1 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5830250698540772
+Of 2653 actions, 424 were seen and 260 have changed.
+
+KW can get 0.9999990861772734
+Of 3403 actions, 29 were seen and 25 have changed.
+
+AW can get 0.9999990808716828
+Of 2165 actions, 29 were seen and 4 have changed.
+
+KW is the meta after 2 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5830250507988264
+Of 2653 actions, 423 were seen and 0 have changed.
+
+KW can get 0.9977704075917787
+Of 3403 actions, 292 were seen and 226 have changed.
+
+AW can get 0.9999990808716828
+Of 2165 actions, 29 were seen and 0 have changed.
+
+AW is the meta after 3 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.7914822893320366
+Of 2653 actions, 360 were seen and 209 have changed.
+
+KW can get 0.9589520987945154
+Of 3403 actions, 618 were seen and 493 have changed.
+
+AW can get 0.95314713971635
+Of 2165 actions, 396 were seen and 251 have changed.
+
+KW is the meta after 4 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5830243896408551
+Of 2653 actions, 420 were seen and 12 have changed.
+
+KW can get 0.9977704076479528
+Of 3403 actions, 307 were seen and 65 have changed.
+
+AW can get 0.7180053200910737
+Of 2165 actions, 405 were seen and 234 have changed.
+
+KW is the meta after 5 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5473383478365423
+Of 2653 actions, 426 were seen and 43 have changed.
+
+KW can get 0.9999981297152104
+Of 3403 actions, 273 were seen and 178 have changed.
+
+AW can get 0.724689034139181
+Of 2165 actions, 401 were seen and 3 have changed.
+
+KW is the meta after 6 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5734313997782752
+Of 2653 actions, 426 were seen and 24 have changed.
+
+KW can get 0.9998859922812704
+Of 3403 actions, 287 were seen and 115 have changed.
+
+AW can get 0.7589163392599931
+Of 2165 actions, 394 were seen and 17 have changed.
+
+KW is the meta after 7 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5734313997782752
+Of 2653 actions, 426 were seen and 0 have changed.
+
+KW can get 0.9997513433434467
+Of 3403 actions, 470 were seen and 207 have changed.
+
+AW can get 0.7222375353573554
+Of 2165 actions, 402 were seen and 59 have changed.
+
+KW is the meta after 8 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5251904963362874
+Of 2653 actions, 429 were seen and 31 have changed.
+
+KW can get 0.9942476950170179
+Of 3403 actions, 488 were seen and 233 have changed.
+
+AW can get 0.7053239588746962
+Of 2165 actions, 381 were seen and 24 have changed.
+
+KW is the meta after 9 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5247338460400868
+Of 2653 actions, 430 were seen and 5 have changed.
+
+KW can get 0.9907903613954923
+Of 3403 actions, 721 were seen and 301 have changed.
+
+AW can get 0.6316265159095268
+Of 2165 actions, 390 were seen and 28 have changed.
+
+KW is the meta after 10 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5140784833583488
+Of 2653 actions, 433 were seen and 13 have changed.
+
+KW can get 0.954044543089623
+Of 3403 actions, 760 were seen and 298 have changed.
+
+AW can get 0.626939913157331
+Of 2165 actions, 390 were seen and 16 have changed.
+
+KW is the meta after 11 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5434885954456692
+Of 2653 actions, 426 were seen and 18 have changed.
+
+KW can get 0.9542928256986116
+Of 3403 actions, 814 were seen and 260 have changed.
+
+AW can get 0.5584131418096993
+Of 2165 actions, 396 were seen and 29 have changed.
+
+KW is the meta after 12 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.545411829057455
+Of 2653 actions, 423 were seen and 9 have changed.
+
+KW can get 0.8585790833120017
+Of 3403 actions, 840 were seen and 229 have changed.
+
+AW can get 0.5481770221006457
+Of 2165 actions, 398 were seen and 16 have changed.
+
+KW is the meta after 13 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.545411829057455
+Of 2653 actions, 423 were seen and 0 have changed.
+
+KW can get 0.8321479632741243
+Of 3403 actions, 989 were seen and 308 have changed.
+
+AW can get 0.5291113282546777
+Of 2165 actions, 396 were seen and 29 have changed.
+
+KW is the meta after 14 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.545411829057455
+Of 2653 actions, 423 were seen and 0 have changed.
+
+KW can get 0.8048757790390945
+Of 3403 actions, 1081 were seen and 244 have changed.
+
+AW can get 0.4945940522071683
+Of 2165 actions, 408 were seen and 25 have changed.
+
+KW is the meta after 15 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.585013494664109
+Of 2653 actions, 416 were seen and 15 have changed.
+
+KW can get 0.7757404546883079
+Of 3403 actions, 1076 were seen and 256 have changed.
+
+AW can get 0.4898340944907934
+Of 2165 actions, 409 were seen and 12 have changed.
+
+KW is the meta after 16 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5960238361406034
+Of 2653 actions, 412 were seen and 2 have changed.
+
+KW can get 0.7227578552587158
+Of 3403 actions, 990 were seen and 173 have changed.
+
+AW can get 0.4898340944907934
+Of 2165 actions, 409 were seen and 0 have changed.
+
+KW is the meta after 17 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5960238361406034
+Of 2653 actions, 412 were seen and 0 have changed.
+
+KW can get 0.7030028896730856
+Of 3403 actions, 1045 were seen and 162 have changed.
+
+AW can get 0.4902705516601641
+Of 2165 actions, 410 were seen and 5 have changed.
+
+KW is the meta after 18 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5960151983727515
+Of 2653 actions, 411 were seen and 0 have changed.
+
+KW can get 0.6801462741693919
+Of 3403 actions, 1107 were seen and 149 have changed.
+
+AW can get 0.4902705516601641
+Of 2165 actions, 410 were seen and 0 have changed.
+
+KW is the meta after 19 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.596967620001541
+Of 2653 actions, 407 were seen and 5 have changed.
+
+KW can get 0.6567001120539571
+Of 3403 actions, 1139 were seen and 145 have changed.
+
+AW can get 0.4902705516601641
+Of 2165 actions, 410 were seen and 0 have changed.
+
+KW is the meta after 20 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.596967620001541
+Of 2653 actions, 407 were seen and 0 have changed.
+
+KW can get 0.5883405743809346
+Of 3403 actions, 1128 were seen and 117 have changed.
+
+AW can get 0.4899528370549882
+Of 2165 actions, 410 were seen and 8 have changed.
+
+KA is the meta after 21 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.7786520121095778
+Of 2653 actions, 270 were seen and 114 have changed.
+
+KW can get 0.7104282136374085
+Of 3403 actions, 651 were seen and 329 have changed.
+
+AW can get 0.6250145403989928
+Of 2165 actions, 409 were seen and 152 have changed.
+
+KA is the meta after 22 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.6933294976362976
+Of 2653 actions, 486 were seen and 144 have changed.
+
+KW can get 0.710388488139378
+Of 3403 actions, 651 were seen and 0 have changed.
+
+AW can get 0.6250145403989928
+Of 2165 actions, 409 were seen and 0 have changed.
+
+KW is the meta after 23 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.6700576025887297
+Of 2653 actions, 728 were seen and 268 have changed.
+
+KW can get 0.5491613338097299
+Of 3403 actions, 1104 were seen and 79 have changed.
+
+AW can get 0.49090248661029373
+Of 2165 actions, 411 were seen and 0 have changed.
+
+KA is the meta after 24 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5520970955886184
+Of 2653 actions, 470 were seen and 69 have changed.
+
+KW can get 0.5281043659669356
+Of 3403 actions, 625 were seen and 223 have changed.
+
+AW can get 0.3539285229446183
+Of 2165 actions, 401 were seen and 93 have changed.
+
+KA is the meta after 25 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5003725199354865
+Of 2653 actions, 529 were seen and 7 have changed.
+
+KW can get 0.5281043659669356
+Of 3403 actions, 625 were seen and 0 have changed.
+
+AW can get 0.3539285229446183
+Of 2165 actions, 401 were seen and 0 have changed.
+
+KW is the meta after 26 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.6575955322260134
+Of 2653 actions, 591 were seen and 107 have changed.
+
+KW can get 0.5603508081325386
+Of 3403 actions, 1108 were seen and 70 have changed.
+
+AW can get 0.49090248661029373
+Of 2165 actions, 411 were seen and 0 have changed.
+
+KA is the meta after 27 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.4999999475435679
+Of 2653 actions, 529 were seen and 0 have changed.
+
+KW can get 0.42879107715064213
+Of 3403 actions, 629 were seen and 107 have changed.
+
+AW can get 0.35193233006144203
+Of 2165 actions, 401 were seen and 17 have changed.
+
+KA is the meta after 28 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.4999999475435679
+Of 2653 actions, 529 were seen and 0 have changed.
+
+KW can get 0.42879107715064213
+Of 3403 actions, 629 were seen and 0 have changed.
+
+AW can get 0.35193233006144203
+Of 2165 actions, 401 were seen and 0 have changed.
+
+KA is the meta after 29 iterations.
+~~~~~~~~~~~~~~~~
