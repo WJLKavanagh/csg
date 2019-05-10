@@ -18,14 +18,14 @@ for i in range(len(lines)-1):
         KW+=[float(lines[i+4].split(" ")[3])]
         AW+=[float(lines[i+7].split(" ")[3])]
         if count > 2:
-            KA_change+=[float(int(lines[i+2].split(" ")[-3]) / int(lines[i+2].split(" ")[1]))]
-            KW_change+=[float(int(lines[i+5].split(" ")[-3]) / int(lines[i+5].split(" ")[1]))]
-            AW_change+=[float(int(lines[i+8].split(" ")[-3]) / int(lines[i+8].split(" ")[1]))]
+            KA_change+=[float(int(lines[i+2].split(" ")[-3]) / int(lines[i+2].split(" ")[3]))]
+            KW_change+=[float(int(lines[i+5].split(" ")[-3]) / int(lines[i+5].split(" ")[3]))]
+            AW_change+=[float(int(lines[i+8].split(" ")[-3]) / int(lines[i+8].split(" ")[3]))]
 
 y_equals_05 = [0.5]*len(xseries)
 
 
-ax = plt.subplot(1,2,1)
+fig, ax = plt.subplots()
 ax.plot(xseries, KA, label="KA")
 ax.plot(xseries, KW, label="KW")
 ax.plot(xseries, AW, label="AW")
@@ -33,7 +33,7 @@ ax.plot(xseries, y_equals_05, "--")
 plt.title("max Pwin")
 legend = ax.legend(fontsize=18)
 
-ax2 = plt.subplot(1,2,2)
+fig1, ax2 = plt.subplots()
 plt.title('proportion of actions changed')
 ax2.plot(xseries, KA_change, label="KA-change")
 ax2.plot(xseries, KW_change, label="KW-change")
