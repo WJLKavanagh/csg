@@ -10,7 +10,7 @@ AW_change = [0]
 count = 1
 f = input("What file are we parsing: ")
 lines = open(f, "r").readlines()
-for i in range(len(lines)-1):
+for i in range(len(lines)-2):
     if "~~~~" in lines[i]:
         xseries+=[count]
         count+=1

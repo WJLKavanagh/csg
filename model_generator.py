@@ -11,9 +11,9 @@ def run(file_prefix, configuration, meta_pair, i):
     for pair in ["KA","KW","AW"]:
         f = open(file_prefix + "/" + pair + "_vs_" + str(i-1) + ".prism", "w")
         f.write("// Author:\tWilliam Kavanagh, University of Glasgow\n")
-        f.write("// Created:\t" + str(datetime.datetime.now())[:-7] + "\n")
+        f.write("// Created:\t" + str(datetime.datetime.now()).split(" ")[0] + "\n")
         f.write("// File:\t\tCSG auto-generated model\n")
-        f.write("// Comment:\tThis file is a generator for the " + str(i) + "th strategy for " + pair + "\n")
+        f.write("// Comment:\tThis file is a generator for a later strategy for " + pair + "\n")
         f.write("\n// Configuration " + configuration.upper() + ":\n")
         f.write(open("configurations/config_" + configuration + ".txt", "r").read())
         f.write("\nmodule game\n\tattack\t: [0..24];\n\tturn\t\t: [0..2];\n")

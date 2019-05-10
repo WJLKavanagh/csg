@@ -1,0 +1,69 @@
+What configuration are you using (A-E): y
+What output destination do you want: output
+~~~~~~~~~~~~~~~~
+KA can get 0.8297843430997768
+Strategy generated, there are: 14478 transitions.
+
+KW can get 0.7536392313897413
+Strategy generated, there are: 10340 transitions.
+
+AW can get 0.8317495917542577
+Strategy generated, there are: 24824 transitions.
+
+AW is the meta after 0 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.49301759717980775
+Of 9138 actions, 972 were seen and 132 have changed.
+
+KW can get 0.4239605432522846
+Of 8990 actions, 2392 were seen and 461 have changed.
+
+AW can get 0.514771393459237
+Of 15784 actions, 3846 were seen and 721 have changed.
+
+AW is the meta after 1 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.49301759717980775
+Of 9138 actions, 972 were seen and 0 have changed.
+
+KW can get 0.4239605432522846
+Of 8990 actions, 2392 were seen and 0 have changed.
+
+AW can get 0.5017001425935352
+Of 15784 actions, 3843 were seen and 76 have changed.
+
+AW is the meta after 2 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.49301759717980775
+Of 9138 actions, 972 were seen and 0 have changed.
+
+KW can get 0.4239605432522846
+Of 8990 actions, 2392 were seen and 0 have changed.
+
+AW can get 0.503978583071755
+Of 15784 actions, 3832 were seen and 12 have changed.
+
+AW is the meta after 3 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.49301759717980775
+Of 9138 actions, 972 were seen and 0 have changed.
+
+KW can get 0.4239605432522846
+Of 8990 actions, 2392 were seen and 0 have changed.
+
+AW can get 0.5029050309112418
+Of 15784 actions, 3850 were seen and 8 have changed.
+
+AW is the meta after 4 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.49301759717980775
+Of 9138 actions, 972 were seen and 0 have changed.
+
+KW can get 0.4239605432522846
+Of 8990 actions, 2392 were seen and 0 have changed.
+
+AW can get 0.4999999989124758
+Of 15784 actions, 3826 were seen and 0 have changed.
+
+AW is the meta after 5 iterations.
+~~~~~~~~~~~~~~~~

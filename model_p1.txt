@@ -1,4 +1,4 @@
-[flip_coin]	turn = 0 & p2_sum < 2*health_ceiling			-> 0.5 : (turn' = 1) + 0.5 : (turn' = 2);				// If an opposing pair has been chosen, choose first mover
+[flip_coin]	turn = 0 & p2K*p2A*p2W = 0 -> 0.5 : (turn' = 1) + 0.5 : (turn' = 2);				// If an opposing pair has been chosen, choose first mover
 
 // P1:
 [p1_K_K] 	attack = 0 & turn = 1 & p1K > 0 & p1_stun != 1 & p2K > 0 -> (attack' = 1) & (p1_stun' = 0);

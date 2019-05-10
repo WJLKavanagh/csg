@@ -38,7 +38,7 @@ def loop_check(j):
     for p in range(j-1, 0, -1):
         all_clear = False
         for pair in ["KA","KW","AW"]:
-            if filecmp.cmp(output+"/"+pair+"_strategy_"+str(j)+".txt", output+"/"+pair+"_strategy_"+str(p)+".txt", shallow=False):
+            if not filecmp.cmp(output+"/"+pair+"_strategy_"+str(j)+".txt", output+"/"+pair+"_strategy_"+str(p)+".txt", shallow=False):
                 all_clear = True
         if not all_clear:
             print("At iteration " + str(j) + " strategies are identical to at iteration " + str(p))
@@ -65,7 +65,7 @@ best_probability = 0.0
 for pair in ["KA","KW","AW"]:
     os.system("prism output/" + pair + "_generator.prism properties/mdp.props \
     -prop 1 -exportadvmdp " + output + "/tmp.tra -exportstates " + output + \
-    "/tmp.sta > " + output + "/log.txt")
+    "/tmp.sta -javamaxmem 5g > " + output + "/log.txt")
     probability = float(find_result(output+"/log.txt"))
     print(pair + " can get " + str(probability))
     if probability > best_probability:
@@ -92,8 +92,7 @@ k += 1
 """
 
 something_is_new = True
-#while(something_is_new & loop_check(k-1)):
-while(something_is_new):
+while something_is_new and loop_check(k-1):
     something_is_new = False
     best_probability = 0.0
     best_pair_this_it = "none"
@@ -102,7 +101,7 @@ while(something_is_new):
         # find the probability of winning
         os.system("prism output/" + pair + "_vs_" + str(k-1) + ".prism properties/mdp.props \
         -prop 1 -exportadvmdp " + output + "/tmp.tra -exportstates " + output + \
-        "/tmp.sta > " + output + "/log.txt")
+        "/tmp.sta -javamaxmem 5g > " + output + "/log.txt")
         probability = float(find_result(output+"/log.txt"))
         print(pair + " can get " + str(probability))
         # designate the new meta
@@ -118,3 +117,4 @@ while(something_is_new):
     meta_pair = best_pair_this_it
     print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
     k = k + 1
+if not something_is_new: print("Dominant strategy found")
