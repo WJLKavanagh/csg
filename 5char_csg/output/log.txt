@@ -1,0 +1,65 @@
+PRISM-games
+===========
+
+Version: 4.4.dev
+Date: Tue May 14 17:26:15 BST 2019
+Hostname: wkav-B250M-D2V
+Memory limits: cudd=1g, java(heap)=5g
+Command line: prism-games output/RH_vs_0.prism ../properties/mdp.props -prop 1 -exportadvmdp output/tmp.tra -exportstates output/tmp.sta -javamaxmem 5g
+
+Parsing model file "output/RH_vs_0.prism"...
+
+Parsing properties file "../properties/mdp.props"...
+
+4 properties:
+(1) Pmax=? [ F "p1_wins" ]
+(2) Pmax=? [ F "p2_wins" ]
+(3) Pmax=? [ F "p1_wins" ]+Pmax=? [ F "p2_wins" ]
+(4) Pmax=? [ F "deadlock"&!("p1_wins"|"p2_wins") ]
+
+Type:        MDP
+Modules:     game 
+Variables:   attack turn p1K p1A p1W p1R p1H p1_stun p2K p2A p2W p2R p2H p2_stun 
+
+Building model...
+
+Warning: Guard for command 9404 of module "game" is never satisfied.
+
+Warning: Guard for command 9464 of module "game" is never satisfied.
+
+Computing reachable states...
+
+Reachability (BFS): 4 iterations in 0.01 seconds (average 0.001750, setup 0.00)
+
+Time for model construction: 4.566 seconds.
+
+Warning: Deadlocks detected and fixed in 5 states
+
+Type:        MDP
+States:      13 (1 initial)
+Transitions: 25
+Choices:     18
+
+Transition matrix: 2335 nodes (7 terminal), 25 minterms, vars: 47r/47c/176nd
+
+Exporting list of reachable states in plain text format to file "output/tmp.sta"...
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ F "p1_wins" ]
+Switching engine since only sparse engine currently supports this computation...
+
+Warning: Disabling Prob1 since this is needed for adversary generation
+
+yes = 0, no = 13, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Note: There were 4 warnings during computation.
+
