@@ -22,10 +22,13 @@ for clump in clumps:
     p1sum = state["p1K"]+state["p1A"]+state["p1W"]+state["p1R"]+state["p1H"]
     p2sum = state["p2K"]+state["p2A"]+state["p2W"]+state["p2R"]+state["p2H"]
     actors = ["p2K", "p2A", "p2W", "p2R", "p2H"]
-
+    if not state["p2H"] and state["p2_heal"] > 0: continue      # Don't care about heal states if there's no healer
+    if p2sum == 2 and not state[actors[state["p2_heal"]]]:
+        print(state)
+        continue    # Can't have a heal target who is a 3rd alive char.
     # Build guard
     guard = "\t[p2] attack = 0 & turn = 2 & "
-
+'p1K': 0, 'p1A': 0, 'p1W': 0, 'p1R': 0, 'p1H': 1, 'p2K': 0, 'p2A': 0, 'p2W': 0, 'p2R': 1, 'p2H': 1, 'p2_heal': 0}
     # Add actor info
     if not state["p2H"] or p1sum != 1:
         for i in range(len(actors)):
@@ -39,7 +42,7 @@ for clump in clumps:
             else: guard += "(" + actors[i] + " = 0 | p2_stun = " + str(i+1) + ") & "
             if len(guard) > 120 and len(guard) < 150:
                 guard += "\n\t"
-        if state["p2_heal"] != 4:  guard += actors[state["p2_heal"]] + " > 0 & "                # if extra heal target is healer..
+        if state["p2_heal"] != 4 and p2sum == 1:  guard += actors[state["p2_heal"]] + " > 0 & "                # if extra heal target isn't healer..
 
     # add target info
     dead = []
@@ -84,16 +87,16 @@ for clump in clumps:
                 if state["p1" + target[0]] and target[1] == "H":
                     possible_actions += [action_d[act]]
                 # if the target is alive and the healer is the only available target then it can check if the heal target is alive to heal them
-                elif state["p1" + target[0]] and p2_sum == 1:
+                elif state["p1" + target[0]] and actors[state["p2_heal"]][2] == target[1] and p2sum == 1:
                     possible_actions += [action_d[act]]
 
 
-    #print(guard + " ->")
+    print(guard + " ->")
     if len(possible_actions) == 1:
-        print(guard + " ->")
+        #print(guard + " ->")
         print("\t\t(attack' = " + str(possible_actions[0]) + ") & (p2_stun' = 0);")
-    # else:
-    #     for i in range(len(possible_actions)):
-    #         final_char = " +"
-    #         if i == len(possible_actions) - 1: final_char = ";"
-    #         print("\t\t1/"+str(len(possible_actions)) + " : (attack' = " + str(possible_actions[i]) + ") & (p2_stun' = 0)" + final_char)
+    else:
+        for i in range(len(possible_actions)):
+            final_char = " +"
+            if i == len(possible_actions) - 1: final_char = ";"
+            print("\t\t1/"+str(len(possible_actions)) + " : (attack' = " + str(possible_actions[i]) + ") & (p2_stun' = 0)" + final_char)

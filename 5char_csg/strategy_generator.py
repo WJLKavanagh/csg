@@ -1,3 +1,4 @@
+
 # William Kavanagh, May 2019
 # Extended CSG - strategy generator for 5c RPGLite
 
@@ -49,6 +50,7 @@ def run(file_prefix, pair, i):
     for line in open(file_prefix+"/tmp.tra","r").readlines()[1:]:   # for every transition
         if line.split(" ")[4][:2] == "p1":     # if the line is relevant
             total_actions +=1
+            #print(line.split(" ")[0], line.split(" ")[4][3:-1])
             transitions[line.split(" ")[0]] = line.split(" ")[4][3:-1]
     # Transitions = {state, action_string} for every relevant action.
     var_descriptors = ["attack","turn","p1K","p1A","p1W","p1R","p1H","p1_stun","p2K","p2A","p2W","p2R","p2H","p2_stun"]
@@ -60,7 +62,8 @@ def run(file_prefix, pair, i):
                 single_t = transitions[line.split(":(")[0]]         # the transition string is
                 single_a = 0                                        # the value for 'attack' is skip by default
                 for act in action_d.keys():
-                    if act == "single_t":
+                    if act == "p2_" + single_t:
+                        #print("woa")
                         single_a = action_d[act]                    # set attack int.
                 guard = "\t[p2_" + single_t + "]\tattack = 0 & turn = 2 & p1K = "
                 guard += state_desc[8] + " & p1A = " + state_desc[9] + " & p1W = " + state_desc[10]
@@ -74,6 +77,7 @@ def run(file_prefix, pair, i):
                     command = "\t\t\t\t(attack' = 0) & (turn' = 1) & (p2_stun' = 0);\n"
                 f.write(guard + command)      # print the guard
             else: voided_actions += 1
+
     f.write("// There are " + str(total_actions) + " actions in total, " + str(voided_actions) + " were invalid.\n" )
     return(total_actions)
 
@@ -83,4 +87,4 @@ def run(file_prefix, pair, i):
 # tra_e.g. 1740 0 11901 1 p1_W_W
 # 13 K2>K1, 14 K2>A1, 15 K2>W1, 16 A2>K1, 17 A2>A1, 18 A2>W1, 19 A2>K1A1, 20 A2>K1W1, 21 A2>A1W1, 22 W2>K1, 23 W2>A1, 24 W2>W1
 
-#run("output", "RH", 0)
+#run("output/test", "KA", 0)

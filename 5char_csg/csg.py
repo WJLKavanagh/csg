@@ -22,8 +22,7 @@
 """
 
 import sys, os, filecmp
-#import metagenerator, strategy_generator, model_generator, strategy_updater
-import metagenerator, strategy_generator, model_generator
+import metagenerator, strategy_generator, model_generator, strategy_updater
 
 def find_result(file):
     # Take a log file, return the value found by MCing.
@@ -46,7 +45,6 @@ def loop_check(j):
             return False
     return True
 
-
 # setup
 config = input("What configuration are you using: ").lower()
 output = input("What output destination do you want: ")
@@ -55,7 +53,6 @@ k = 0                                   # iterations
 meta_pair = "none"                      # current best strategy is strategy k for pair <meta_pair>
 metagenerator.run(output, config)       # Create the 10 generator models
 best_probability = 0.0
-
 """
 1.  For m in M:
         calculate strategy(p1/m) giving max( Pwin(p1) (strategy(p1/m),random_strategy(p2/random_m) )
@@ -81,7 +78,6 @@ for pair in pairs:
     print("Strategy generated, there are: " + str(transition_count) + " transitions.\n")
 print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
 k += 1
-
 """
 2. For m in M:
         calculate stategy'(p1/m) giving max( Pwin(p1) (strategy'(p1/m),'the meta'))
@@ -96,7 +92,6 @@ k += 1
     else ->
         Stop. 'the meta' is a dominant strategy.
 """
-
 something_is_new = True
 while something_is_new and loop_check(k-1):
     something_is_new = False
@@ -115,12 +110,11 @@ while something_is_new and loop_check(k-1):
             best_pair_this_it = pair
             best_probability = probability
         # generate the new strategies
-        #total, seen, new = strategy_updater.run(output, pair, k)
+        total, seen, new = strategy_updater.run(output, pair, k)
         # print how many transitions have been updated
-        #print("Of " + str(total) + " actions, " + str(seen) + " were seen and " + str(new) +  " have changed.\n")
-        #if new > 0:
-        #    something_is_new = True
-        something_is_new = True
+        print("Of " + str(total) + " actions, " + str(seen) + " were seen and " + str(new) +  " have changed.\n")
+        if new > 0:
+            something_is_new = True
     meta_pair = best_pair_this_it
     print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
     k = k + 1

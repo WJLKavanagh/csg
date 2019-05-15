@@ -2,12 +2,12 @@ PRISM-games
 ===========
 
 Version: 4.4.dev
-Date: Tue May 14 17:26:15 BST 2019
+Date: Wed May 15 18:22:37 BST 2019
 Hostname: wkav-B250M-D2V
 Memory limits: cudd=1g, java(heap)=5g
-Command line: prism-games output/RH_vs_0.prism ../properties/mdp.props -prop 1 -exportadvmdp output/tmp.tra -exportstates output/tmp.sta -javamaxmem 5g
+Command line: prism-games output/KA_vs_9.prism ../properties/mdp.props -prop 1 -exportadvmdp output/tmp.tra -exportstates output/tmp.sta -javamaxmem 5g
 
-Parsing model file "output/RH_vs_0.prism"...
+Parsing model file "output/KA_vs_9.prism"...
 
 Parsing properties file "../properties/mdp.props"...
 
@@ -23,24 +23,20 @@ Variables:   attack turn p1K p1A p1W p1R p1H p1_stun p2K p2A p2W p2R p2H p2_stun
 
 Building model...
 
-Warning: Guard for command 9404 of module "game" is never satisfied.
-
-Warning: Guard for command 9464 of module "game" is never satisfied.
-
 Computing reachable states...
 
-Reachability (BFS): 4 iterations in 0.01 seconds (average 0.001750, setup 0.00)
+Reachability (BFS): 31 iterations in 0.04 seconds (average 0.001129, setup 0.00)
 
-Time for model construction: 4.566 seconds.
+Time for model construction: 10.231 seconds.
 
-Warning: Deadlocks detected and fixed in 5 states
+Warning: Deadlocks detected and fixed in 56 states
 
 Type:        MDP
-States:      13 (1 initial)
-Transitions: 25
-Choices:     18
+States:      1821 (1 initial)
+Transitions: 3672
+Choices:     2333
 
-Transition matrix: 2335 nodes (7 terminal), 25 minterms, vars: 47r/47c/176nd
+Transition matrix: 9433 nodes (12 terminal), 3672 minterms, vars: 49r/49c/181nd
 
 Exporting list of reachable states in plain text format to file "output/tmp.sta"...
 
@@ -51,15 +47,33 @@ Switching engine since only sparse engine currently supports this computation...
 
 Warning: Disabling Prob1 since this is needed for adversary generation
 
-yes = 0, no = 13, maybe = 0
+Prob0A: 22 iterations in 0.06 seconds (average 0.002636, setup 0.00)
 
-Value in the initial state: 0.0
+yes = 27, no = 29, maybe = 1765
 
-Time for model checking: 0.004 seconds.
+Computing remaining probabilities...
+Engine: Sparse
 
-Result: 0.0 (value in the initial state)
+Building sparse matrix... [n=1821, nc=2277, nnz=3616, k=5] [46.4 KB]
+Building action information... [7.1 KB]
+Creating vector for yes... [14.2 KB]
+Allocating iteration vectors... [2 x 14.2 KB]
+Allocating adversary vector... [7.1 KB]
+TOTAL: [103.3 KB]
+
+Starting iterations...
+
+Iterative method: 67 iterations in 0.01 seconds (average 0.000045, setup 0.01)
+
+Adversary written to file "output/tmp.tra".
+
+Value in the initial state: 0.5724833442283379
+
+Time for model checking: 0.059 seconds.
+
+Result: 0.5724833442283379 (value in the initial state)
 
 ---------------------------------------------------------------------
 
-Note: There were 4 warnings during computation.
+Note: There were 2 warnings during computation.
 
