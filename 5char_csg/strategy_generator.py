@@ -87,4 +87,4 @@ def run(file_prefix, pair, i):
 # tra_e.g. 1740 0 11901 1 p1_W_W
 # 13 K2>K1, 14 K2>A1, 15 K2>W1, 16 A2>K1, 17 A2>A1, 18 A2>W1, 19 A2>K1A1, 20 A2>K1W1, 21 A2>A1W1, 22 W2>K1, 23 W2>A1, 24 W2>W1
 
-#run("output/test", "KA", 0)
+#run("output/test", "WR", 0)

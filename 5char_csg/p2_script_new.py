@@ -10,7 +10,8 @@ for p1K in [1,0]:
                                 for p2R in [1,0]:
                                     for p2H in [1,0]:
                                         p2_sum = p2K+p2A+p2W+p2R+p2H
-                                        if p1K+p1A+p1W+p1R+p1H <= 2 and p2_sum <= 2 and p1K+p1A+p1W+p1R+p1H > 0 and p2_sum > 0 :
+                                        p1_sum = p1K+p1A+p1W+p1R+p1H
+                                        if p1_sum <= 2 and p2_sum <= 2 and p1_sum > 0 and p2_sum > 0 :
                                             clumps += [str(p1K)+str(p1A)+str(p1W)+str(p1R)+str(p1H)+str(p2K)+str(p2A)+str(p2W)+str(p2R)+str(p2H)]
 
 for clump in clumps:
@@ -97,14 +98,14 @@ for clump in clumps:
                     possible_actions += ["p2_A_" + poss_targets[0][2] + poss_targets[1][2]]
                 else:
                     possible_actions += ["p2_A_" + poss_targets[0][2]]
-        if len(possible_actions) == 1:print(guard+target_guard+" ->")
+        print(guard+target_guard+" ->")
         if len(possible_actions) == 1:
             print("\t\t\t(attack' = " + str(action_d[possible_actions[0]]) + ") & (p2_stun' = 0);")
-        # else:
-        #     for i in range(len(possible_actions)):
-        #         final_char = " +"
-        #         if i == len(possible_actions) - 1: final_char = ";"
-        #         print("\t\t\t1/"+str(len(possible_actions)) + " : (attack' = " + str(action_d[possible_actions[i]]) + ") & (p2_stun' = 0)" + final_char)
+        else:
+            for i in range(len(possible_actions)):
+                final_char = " +"
+                if i == len(possible_actions) - 1: final_char = ";"
+                print("\t\t\t1/"+str(len(possible_actions)) + " : (attack' = " + str(action_d[possible_actions[i]]) + ") & (p2_stun' = 0)" + final_char)
 
     else:
         possible_actions = []
@@ -124,29 +125,28 @@ for clump in clumps:
                 possible_actions += ["p2_A_" + poss_targets[0][2] + poss_targets[1][2]]
             else:
                 possible_actions += ["p2_A_" + poss_targets[0][2]]
-        if len(possible_actions) == 1:print(guard_1dead+target_guard+" ->")
+        print(guard_1dead+target_guard+" ->")
         if len(possible_actions) == 1:
             print("\t\t\t(attack' = " + str(action_d[possible_actions[0]]) + ") & (p2_stun' = 0);")
-        # else:
-        #     for i in range(len(possible_actions)):
-        #         final_char = " +"
-        #         if i == len(possible_actions) - 1: final_char = ";"
-        #         print("\t\t\t1/"+str(len(possible_actions)) + " : (attack' = " + str(action_d[possible_actions[i]]) + ") & (p2_stun' = 0)" + final_char)
-        #if ac != "p2H": continue
+        else:
+            for i in range(len(possible_actions)):
+                final_char = " +"
+                if i == len(possible_actions) - 1: final_char = ";"
+                print("\t\t\t1/"+str(len(possible_actions)) + " : (attack' = " + str(action_d[possible_actions[i]]) + ") & (p2_stun' = 0)" + final_char)
         for stunned_c in range(len(actors)):
             if state[actors[stunned_c]]: continue
             possible_actions_spec = possible_actions
             if ac == "p2H":
                 for ta in poss_targets:
                     possible_actions_spec += ["p2_H_" + ta[2] + actors[stunned_c][2]]
-            if len(possible_actions) == 1:print(guard_1stuns[stunned_c] + target_guard+" ->")
+            print(guard_1stuns[stunned_c] + target_guard+" ->")
             if len(possible_actions_spec) == 1:
                 print("\t\t\t(attack' = " + str(action_d[possible_actions_spec[0]]) + ") & (p2_stun' = 0);")
-            # else:
-            #     for i in range(len(possible_actions_spec)):
-            #         final_char = " +"
-            #         if i == len(possible_actions_spec) - 1: final_char = ";"
-            #         print("\t\t\t1/"+str(len(possible_actions_spec)) + " : (attack' = " + str(action_d[possible_actions_spec[i]]) + ") & (p2_stun' = 0)" + final_char)
+            else:
+                for i in range(len(possible_actions_spec)):
+                    final_char = " +"
+                    if i == len(possible_actions_spec) - 1: final_char = ";"
+                    print("\t\t\t1/"+str(len(possible_actions_spec)) + " : (attack' = " + str(action_d[possible_actions_spec[i]]) + ") & (p2_stun' = 0)" + final_char)
             if ac == "p2H":
                 for ta in poss_targets:
                     possible_actions_spec.remove("p2_H_" + ta[2] + actors[stunned_c][2])

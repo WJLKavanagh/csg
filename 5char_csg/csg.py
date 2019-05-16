@@ -68,7 +68,7 @@ for i in range(len(chars)):
 for pair in pairs:
     os.system("prism output/" + pair + "_generator.prism ../properties/mdp.props \
     -prop 1 -exportadvmdp " + output + "/tmp.tra -exportstates " + output + \
-    "/tmp.sta -javamaxmem 5g > " + output + "/log.txt")
+    "/tmp.sta -javamaxmem 5g -nopre -maxiters 100000 > " + output + "/log.txt")
     probability = float(find_result(output+"/log.txt"))
     print(pair + " can get " + str(probability))
     if probability > best_probability:
