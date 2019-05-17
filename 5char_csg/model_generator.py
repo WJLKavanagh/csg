@@ -42,4 +42,4 @@ def run(file_prefix, configuration, meta_pair, i):
         f.write(open(file_prefix + "/" + meta_pair + "_strategy_" + str(i-1) + ".txt", "r").read())
         f.write(open("model_suffix.txt","r").read())
 
-run("output", "alpha", "RH", 1)
+#run("output", "alpha", "RH", 1)
