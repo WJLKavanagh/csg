@@ -1,0 +1,12 @@
+PRISM-games
+===========
+
+Version: 4.4.dev
+Date: Tue May 21 14:39:31 BST 2019
+Hostname: william-XPS-15-9570
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism-games output/final_strats.prism ../properties/mdp.props -prop 2
+
+Parsing model file "output/final_strats.prism"...
+
+Error: Syntax error ("p1K", line 28, column 9).

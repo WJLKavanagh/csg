@@ -25,7 +25,7 @@ count = 1
 f = input("What file are we parsing: ")
 lines = open(f, "r").readlines()
 for i in range(len(lines)-2):
-    if "~~~~" in lines[i]:
+    if "~~~~" in lines[i] and "Dominant strategy" not in lines[i+1]:
         xseries+=[count]
         count+=1
         KA+=[float(lines[i+1].split(" ")[3])]

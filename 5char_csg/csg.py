@@ -22,7 +22,7 @@
 """
 
 import sys, os, filecmp
-import metagenerator, strategy_generator, model_generator, strategy_updater
+import metagenerator, strategy_generator, model_generator, strategy_updater, strategy_reverse, final_material_comp
 
 def find_result(file):
     # Take a log file, return the value found by MCing.
@@ -93,7 +93,7 @@ k += 1
         Stop. 'the meta' is a dominant strategy.
 """
 something_is_new = True
-while something_is_new and loop_check(k-1):
+while something_is_new: # and loop_check(k-1):
     something_is_new = False
     best_probability = 0.0
     best_pair_this_it = "none"
@@ -118,4 +118,7 @@ while something_is_new and loop_check(k-1):
     meta_pair = best_pair_this_it
     print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
     k = k + 1
-if not something_is_new: print("Dominant strategy found")
+print("Generation finished, building final table")
+for pair in pairs[1:]:
+    strategy_reverse.run(pair, k-1, output)
+final_material_comp.run(k-1, output, config)

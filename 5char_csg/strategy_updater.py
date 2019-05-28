@@ -113,4 +113,4 @@ def run(file_prefix, pair, i):
     + " have been updated\n")
     return(len(old_transitions), len(new_transitions), new_actions)
 
-run("output/test", "WR", 11)
+#run("output/test", "WR", 11)

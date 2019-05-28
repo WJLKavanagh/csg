@@ -37,4 +37,5 @@ def run(file_prefix, configuration):
                     print = True
                     f.write(line)
             else: f.write(line)
-run("output", "alpha")
+        f.write("rewards\n\tturn = 2 : 1;\nendrewards")
+#run("output/test", "alpha")

@@ -16,6 +16,6 @@ const int Rogue_execute = 5;
 const double Rogue_accuracy = 0.6;
 
 const int Healer_health = 7;
-const int Healer_damage = 1;
-const int Healer_heal = 2;
+const int Healer_damage = 2;
+const int Healer_heal = 1;
 const double Healer_accuracy = 0.8;

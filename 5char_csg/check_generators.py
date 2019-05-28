@@ -5,6 +5,6 @@ for i in range(len(chars)):
     for j in range(i+1,len(chars)):
         pairs += [chars[i] + chars[j]]
 arg = "generator"
-if len(sys.argv) >= 1: arg = "vs_" + sys.argv[1]
+#if len(sys.argv) >= 1: arg = "vs_" + sys.argv[1]
 for pair in pairs:
-    os.system("prism output/" + pair + "_" + arg + ".prism ../properties/mdp.props -prop 4")
+    os.system("prism output/test/" + pair + "_" + arg + ".prism ../properties/mdp.props -prop 5")
