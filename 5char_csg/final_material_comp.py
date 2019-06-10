@@ -23,7 +23,7 @@ def run(iter, file_prefix, configuration):
             if j < i:
                 results[pairs[i]] += [1 - float(results[pairs[j]][i])]
             elif j == i:
-                results[pairs[i]] += [0.5]
+                results[pairs[i]] += [0.500]
             else:
                 f = open(file_prefix + "/final_strats.prism","w")
                 f.write("// Author:\tWilliam Kavanagh, University of Glasgow\n")
@@ -53,7 +53,7 @@ def run(iter, file_prefix, configuration):
                 f.write(open(file_prefix + "/" + pairs[j]+"_strategy_" + str(iter) + "_reversed.txt","r").read())
                 f.write(open(file_prefix + "/" + pairs[i]+"_strategy_" + str(iter) + ".txt","r").read())
                 f.write(open("model_suffix.txt","r").read())
-                os.system("prism " + file_prefix + "/final_strats.prism ../properties/mdp.props -prop 2 > " + file_prefix + "/log.txt")
+                os.system("prism " + file_prefix + "/final_strats.prism ../properties/mdp.props -prop 2 -javamaxmem 4g > " + file_prefix + "/log.txt")
                 results[pairs[i]] += [find_result(file_prefix + "/log.txt")]
             count = count + 1
     row = ""
@@ -82,4 +82,4 @@ def run(iter, file_prefix, configuration):
                 num_involvement += 1
         print(char, "gets an average of: " + str(total_average/num_involvement)[:8])
 
-#run(8,"output","delta")
+#run(26,"output","zeta")

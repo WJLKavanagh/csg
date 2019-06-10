@@ -1,0 +1,1004 @@
+What configuration are you using: eta_buff4
+What output destination do you want: output
+~~~~~~~~~~~~~~~~
+KA can get 0.888983659668148
+Strategy generated, there are: 43868 transitions.
+
+KW can get 0.8067973152623634
+Strategy generated, there are: 43868 transitions.
+
+KR can get 0.7317711251381434
+Strategy generated, there are: 21743 transitions.
+
+KH can get 0.8580150104652822
+Strategy generated, there are: 61640 transitions.
+
+AW can get 0.8020658510699101
+Strategy generated, there are: 11580 transitions.
+
+AR can get 0.8160631293761698
+Strategy generated, there are: 31196 transitions.
+
+AH can get 0.8665770873499402
+Strategy generated, there are: 16929 transitions.
+
+WR can get 0.8623126774841638
+Strategy generated, there are: 31196 transitions.
+
+WH can get 0.8534198045306323
+Strategy generated, there are: 16929 transitions.
+
+RH can get 0.8392429639520415
+Strategy generated, there are: 44852 transitions.
+
+KA is the meta after 0 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5114262882384402
+Of 40991 actions, 2600 were seen and 360 have changed.
+
+KW can get 0.47427859741684664
+Of 40991 actions, 3751 were seen and 417 have changed.
+
+KR can get 0.28825259371811446
+Of 20035 actions, 692 were seen and 40 have changed.
+
+KH can get 0.6205391454865415
+Of 58488 actions, 4253 were seen and 969 have changed.
+
+AW can get 0.2603198643377596
+Of 10575 actions, 1160 were seen and 152 have changed.
+
+AR can get 0.32869831050656745
+Of 29019 actions, 2233 were seen and 329 have changed.
+
+AH can get 0.6137626380759169
+Of 15759 actions, 1645 were seen and 405 have changed.
+
+WR can get 0.6099953051697665
+Of 29019 actions, 2688 were seen and 229 have changed.
+
+WH can get 0.662065830253004
+Of 15759 actions, 1670 were seen and 366 have changed.
+
+RH can get 0.6156622247496912
+Of 42324 actions, 3707 were seen and 745 have changed.
+
+WH is the meta after 1 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5190033304754724
+Of 40990 actions, 2053 were seen and 385 have changed.
+
+KW can get 0.4578664674992083
+Of 40990 actions, 1460 were seen and 146 have changed.
+
+KR can get 0.5396365447242994
+Of 20034 actions, 544 were seen and 43 have changed.
+
+KH can get 0.5747317562871053
+Of 58487 actions, 1416 were seen and 261 have changed.
+
+AW can get 0.5193947490719584
+Of 10574 actions, 733 were seen and 75 have changed.
+
+AR can get 0.4691245411973315
+Of 29018 actions, 810 were seen and 123 have changed.
+
+AH can get 0.5891892811614518
+Of 15758 actions, 501 were seen and 82 have changed.
+
+WR can get 0.6357817491172122
+Of 29018 actions, 1955 were seen and 108 have changed.
+
+WH can get 0.5879322475884572
+Of 15758 actions, 272 were seen and 33 have changed.
+
+RH can get 0.6939352962248198
+Of 42323 actions, 747 were seen and 115 have changed.
+
+RH is the meta after 2 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5124172299941822
+Of 40989 actions, 1845 were seen and 380 have changed.
+
+KW can get 0.5993435277337634
+Of 40989 actions, 2631 were seen and 341 have changed.
+
+KR can get 0.43050402063867904
+Of 20033 actions, 418 were seen and 48 have changed.
+
+KH can get 0.597376932518013
+Of 58486 actions, 4686 were seen and 1616 have changed.
+
+AW can get 0.3612500234510564
+Of 10573 actions, 579 were seen and 49 have changed.
+
+AR can get 0.42925515298847505
+Of 29017 actions, 931 were seen and 170 have changed.
+
+AH can get 0.5796555291137764
+Of 15757 actions, 1211 were seen and 358 have changed.
+
+WR can get 0.5161863939200211
+Of 29017 actions, 1596 were seen and 110 have changed.
+
+WH can get 0.5094465955335757
+Of 15757 actions, 1408 were seen and 325 have changed.
+
+RH can get 0.4999982418302841
+Of 42322 actions, 1474 were seen and 334 have changed.
+
+KW is the meta after 3 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.6062824692072785
+Of 40988 actions, 1489 were seen and 132 have changed.
+
+KW can get 0.5211491964823975
+Of 40988 actions, 2487 were seen and 182 have changed.
+
+KR can get 0.44132001976383034
+Of 20032 actions, 306 were seen and 15 have changed.
+
+KH can get 0.6781557717757858
+Of 58485 actions, 3237 were seen and 433 have changed.
+
+AW can get 0.7300745951387532
+Of 10572 actions, 1235 were seen and 122 have changed.
+
+AR can get 0.6456068978966395
+Of 29016 actions, 2471 were seen and 283 have changed.
+
+AH can get 0.6495682699371368
+Of 15756 actions, 565 were seen and 43 have changed.
+
+WR can get 0.8449267825709275
+Of 29016 actions, 2948 were seen and 167 have changed.
+
+WH can get 0.5452335370680291
+Of 15756 actions, 454 were seen and 37 have changed.
+
+RH can get 0.5806179386219106
+Of 42321 actions, 1084 were seen and 149 have changed.
+
+WR is the meta after 4 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.43007085229307784
+Of 40987 actions, 575 were seen and 34 have changed.
+
+KW can get 0.3780635980032067
+Of 40987 actions, 1012 were seen and 107 have changed.
+
+KR can get 0.26366573275484434
+Of 20031 actions, 158 were seen and 15 have changed.
+
+KH can get 0.5323634664041171
+Of 58484 actions, 1333 were seen and 168 have changed.
+
+AW can get 0.35143862585256647
+Of 10571 actions, 721 were seen and 54 have changed.
+
+AR can get 0.3317997107274599
+Of 29015 actions, 843 were seen and 75 have changed.
+
+AH can get 0.4576304241660226
+Of 15755 actions, 329 were seen and 28 have changed.
+
+WR can get 0.5517408749040046
+Of 29015 actions, 1189 were seen and 90 have changed.
+
+WH can get 0.44030478113758165
+Of 15755 actions, 1140 were seen and 136 have changed.
+
+RH can get 0.5299230317300324
+Of 42320 actions, 592 were seen and 76 have changed.
+
+WR is the meta after 5 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.43007085229307784
+Of 40986 actions, 575 were seen and 0 have changed.
+
+KW can get 0.3780635980032067
+Of 40986 actions, 1012 were seen and 0 have changed.
+
+KR can get 0.26366573275484434
+Of 20030 actions, 158 were seen and 0 have changed.
+
+KH can get 0.5323634664041171
+Of 58483 actions, 1333 were seen and 0 have changed.
+
+AW can get 0.35143862585256647
+Of 10570 actions, 721 were seen and 0 have changed.
+
+AR can get 0.3317997107274599
+Of 29014 actions, 839 were seen and 0 have changed.
+
+AH can get 0.4576304241660226
+Of 15754 actions, 329 were seen and 0 have changed.
+
+WR can get 0.5543712042485744
+Of 29014 actions, 1543 were seen and 50 have changed.
+
+WH can get 0.44030478113758165
+Of 15754 actions, 1140 were seen and 0 have changed.
+
+RH can get 0.5299230317300324
+Of 42319 actions, 592 were seen and 0 have changed.
+
+WR is the meta after 6 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.43007085229307784
+Of 40985 actions, 575 were seen and 0 have changed.
+
+KW can get 0.3780635980032067
+Of 40985 actions, 1012 were seen and 0 have changed.
+
+KR can get 0.26366573275484434
+Of 20029 actions, 158 were seen and 0 have changed.
+
+KH can get 0.5323634664041171
+Of 58482 actions, 1333 were seen and 0 have changed.
+
+AW can get 0.35143862585256647
+Of 10569 actions, 721 were seen and 0 have changed.
+
+AR can get 0.3317997107274599
+Of 29013 actions, 839 were seen and 0 have changed.
+
+AH can get 0.4576304241660226
+Of 15753 actions, 329 were seen and 0 have changed.
+
+WR can get 0.5474302158078223
+Of 29013 actions, 1547 were seen and 21 have changed.
+
+WH can get 0.44030478113758165
+Of 15753 actions, 1140 were seen and 0 have changed.
+
+RH can get 0.5299230317300324
+Of 42318 actions, 592 were seen and 0 have changed.
+
+WR is the meta after 7 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.43007085229307784
+Of 40984 actions, 575 were seen and 0 have changed.
+
+KW can get 0.3780635980032067
+Of 40984 actions, 1012 were seen and 0 have changed.
+
+KR can get 0.26366573275484434
+Of 20028 actions, 158 were seen and 0 have changed.
+
+KH can get 0.5323634664041171
+Of 58481 actions, 1333 were seen and 0 have changed.
+
+AW can get 0.35143862585256647
+Of 10568 actions, 721 were seen and 0 have changed.
+
+AR can get 0.3317997107274599
+Of 29012 actions, 839 were seen and 0 have changed.
+
+AH can get 0.4576304241660226
+Of 15752 actions, 329 were seen and 0 have changed.
+
+WR can get 0.5567775714580504
+Of 29012 actions, 1616 were seen and 15 have changed.
+
+WH can get 0.44030478113758165
+Of 15752 actions, 1140 were seen and 0 have changed.
+
+RH can get 0.5299230317300324
+Of 42317 actions, 592 were seen and 0 have changed.
+
+WR is the meta after 8 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.43007085229307784
+Of 40983 actions, 575 were seen and 0 have changed.
+
+KW can get 0.3780635980032067
+Of 40983 actions, 1012 were seen and 0 have changed.
+
+KR can get 0.26366573275484434
+Of 20027 actions, 158 were seen and 0 have changed.
+
+KH can get 0.5323634664041171
+Of 58480 actions, 1333 were seen and 0 have changed.
+
+AW can get 0.35143862585256647
+Of 10567 actions, 721 were seen and 0 have changed.
+
+AR can get 0.3317997107274599
+Of 29011 actions, 839 were seen and 0 have changed.
+
+AH can get 0.4576304241660226
+Of 15751 actions, 329 were seen and 0 have changed.
+
+WR can get 0.5310708692231146
+Of 29011 actions, 1553 were seen and 11 have changed.
+
+WH can get 0.44030478113758165
+Of 15751 actions, 1140 were seen and 0 have changed.
+
+RH can get 0.5299230317300324
+Of 42316 actions, 592 were seen and 0 have changed.
+
+KH is the meta after 9 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.4764717383341252
+Of 40982 actions, 4269 were seen and 912 have changed.
+
+KW can get 0.3934763183068528
+Of 40982 actions, 3628 were seen and 597 have changed.
+
+KR can get 0.39777650689376354
+Of 20026 actions, 794 were seen and 77 have changed.
+
+KH can get 0.5659828530742527
+Of 58479 actions, 4538 were seen and 1390 have changed.
+
+AW can get 0.5488331598622903
+Of 10566 actions, 908 were seen and 97 have changed.
+
+AR can get 0.46040438592128075
+Of 29010 actions, 2432 were seen and 502 have changed.
+
+AH can get 0.6708056003246659
+Of 15750 actions, 1755 were seen and 566 have changed.
+
+WR can get 0.6235060330178888
+Of 29010 actions, 3565 were seen and 358 have changed.
+
+WH can get 0.6946699479888102
+Of 15750 actions, 1899 were seen and 586 have changed.
+
+RH can get 0.5960720570921063
+Of 42315 actions, 5266 were seen and 1575 have changed.
+
+WH is the meta after 10 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5190033304754724
+Of 40981 actions, 2053 were seen and 2 have changed.
+
+KW can get 0.45476582981681524
+Of 40981 actions, 1430 were seen and 0 have changed.
+
+KR can get 0.5396365447242994
+Of 20025 actions, 544 were seen and 0 have changed.
+
+KH can get 0.5811500053896825
+Of 58478 actions, 2152 were seen and 466 have changed.
+
+AW can get 0.517876048518612
+Of 10565 actions, 733 were seen and 7 have changed.
+
+AR can get 0.4691245411973315
+Of 29009 actions, 810 were seen and 0 have changed.
+
+AH can get 0.5891892811614518
+Of 15749 actions, 501 were seen and 0 have changed.
+
+WR can get 0.6343902643541259
+Of 29009 actions, 2425 were seen and 54 have changed.
+
+WH can get 0.6276215707485864
+Of 15749 actions, 842 were seen and 101 have changed.
+
+RH can get 0.6741336751625908
+Of 42314 actions, 2053 were seen and 465 have changed.
+
+RH is the meta after 11 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5123677568510265
+Of 40980 actions, 1848 were seen and 12 have changed.
+
+KW can get 0.5417244511567694
+Of 40980 actions, 3071 were seen and 143 have changed.
+
+KR can get 0.43009066405363006
+Of 20024 actions, 418 were seen and 11 have changed.
+
+KH can get 0.5625070511800141
+Of 58477 actions, 3933 were seen and 748 have changed.
+
+AW can get 0.3612468277059127
+Of 10564 actions, 579 were seen and 0 have changed.
+
+AR can get 0.42925515298847505
+Of 29008 actions, 931 were seen and 0 have changed.
+
+AH can get 0.5796533847627285
+Of 15748 actions, 1214 were seen and 10 have changed.
+
+WR can get 0.5631538056795494
+Of 29008 actions, 1744 were seen and 35 have changed.
+
+WH can get 0.49077512382931665
+Of 15748 actions, 1522 were seen and 272 have changed.
+
+RH can get 0.4999982418302842
+Of 42313 actions, 1758 were seen and 138 have changed.
+
+AH is the meta after 12 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5045633495148656
+Of 40979 actions, 1722 were seen and 350 have changed.
+
+KW can get 0.4142692197488146
+Of 40979 actions, 1767 were seen and 295 have changed.
+
+KR can get 0.48246290299271094
+Of 20023 actions, 1276 were seen and 169 have changed.
+
+KH can get 0.5739173293948694
+Of 58476 actions, 1823 were seen and 556 have changed.
+
+AW can get 0.49442161050173716
+Of 10563 actions, 507 were seen and 71 have changed.
+
+AR can get 0.5097571680412399
+Of 29007 actions, 1367 were seen and 316 have changed.
+
+AH can get 0.6038327558349263
+Of 15747 actions, 452 were seen and 129 have changed.
+
+WR can get 0.5645585415278074
+Of 29007 actions, 1528 were seen and 193 have changed.
+
+WH can get 0.5982339753984427
+Of 15747 actions, 511 were seen and 140 have changed.
+
+RH can get 0.6582987745256881
+Of 42312 actions, 1483 were seen and 465 have changed.
+
+RH is the meta after 13 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5123581657275025
+Of 40978 actions, 1849 were seen and 1 have changed.
+
+KW can get 0.5417244511567694
+Of 40978 actions, 3071 were seen and 0 have changed.
+
+KR can get 0.43009066405363006
+Of 20022 actions, 418 were seen and 0 have changed.
+
+KH can get 0.5625042809056064
+Of 58475 actions, 3934 were seen and 19 have changed.
+
+AW can get 0.3612468277059127
+Of 10562 actions, 579 were seen and 0 have changed.
+
+AR can get 0.42925512716532543
+Of 29006 actions, 931 were seen and 0 have changed.
+
+AH can get 0.41519942875158
+Of 15746 actions, 493 were seen and 87 have changed.
+
+WR can get 0.5631538056795494
+Of 29006 actions, 1744 were seen and 0 have changed.
+
+WH can get 0.49065229777370284
+Of 15746 actions, 1522 were seen and 10 have changed.
+
+RH can get 0.4999982418302842
+Of 42311 actions, 1925 were seen and 133 have changed.
+
+WR is the meta after 14 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.43007085229307784
+Of 40977 actions, 575 were seen and 0 have changed.
+
+KW can get 0.3780635980032067
+Of 40977 actions, 1012 were seen and 0 have changed.
+
+KR can get 0.26366573275484434
+Of 20021 actions, 158 were seen and 0 have changed.
+
+KH can get 0.4983760347038293
+Of 58474 actions, 1336 were seen and 103 have changed.
+
+AW can get 0.35143862585256647
+Of 10561 actions, 721 were seen and 0 have changed.
+
+AR can get 0.3317997107274599
+Of 29005 actions, 819 were seen and 0 have changed.
+
+AH can get 0.48562349976037694
+Of 15745 actions, 707 were seen and 46 have changed.
+
+WR can get 0.5003503176077373
+Of 29005 actions, 1483 were seen and 4 have changed.
+
+WH can get 0.37196716887270864
+Of 15745 actions, 354 were seen and 7 have changed.
+
+RH can get 0.5434715917185275
+Of 42310 actions, 706 were seen and 7 have changed.
+
+RH is the meta after 15 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5123581657275025
+Of 40976 actions, 1849 were seen and 0 have changed.
+
+KW can get 0.5417244511567694
+Of 40976 actions, 3071 were seen and 0 have changed.
+
+KR can get 0.43009066405363006
+Of 20020 actions, 418 were seen and 0 have changed.
+
+KH can get 0.5625042809056078
+Of 58473 actions, 3935 were seen and 25 have changed.
+
+AW can get 0.3612468277059127
+Of 10560 actions, 579 were seen and 0 have changed.
+
+AR can get 0.42925512716532543
+Of 29004 actions, 931 were seen and 0 have changed.
+
+AH can get 0.41519942875158
+Of 15744 actions, 493 were seen and 0 have changed.
+
+WR can get 0.47501299562125704
+Of 29004 actions, 1750 were seen and 8 have changed.
+
+WH can get 0.49065229777371455
+Of 15744 actions, 1522 were seen and 0 have changed.
+
+RH can get 0.4999982418302842
+Of 42309 actions, 2020 were seen and 102 have changed.
+
+KH is the meta after 16 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.476471703504427
+Of 40975 actions, 4269 were seen and 2 have changed.
+
+KW can get 0.3934763183068528
+Of 40975 actions, 3628 were seen and 0 have changed.
+
+KR can get 0.39777650689376354
+Of 20019 actions, 794 were seen and 0 have changed.
+
+KH can get 0.5925103303360524
+Of 58472 actions, 7327 were seen and 1651 have changed.
+
+AW can get 0.548833159632772
+Of 10559 actions, 908 were seen and 0 have changed.
+
+AR can get 0.46040438592128075
+Of 29003 actions, 2432 were seen and 0 have changed.
+
+AH can get 0.6405710846262542
+Of 15743 actions, 1847 were seen and 516 have changed.
+
+WR can get 0.535856912011518
+Of 29003 actions, 3775 were seen and 68 have changed.
+
+WH can get 0.6695432692098149
+Of 15743 actions, 1892 were seen and 344 have changed.
+
+RH can get 0.5651206431230138
+Of 42308 actions, 5482 were seen and 631 have changed.
+
+WH is the meta after 17 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5190033304754724
+Of 40974 actions, 2053 were seen and 2 have changed.
+
+KW can get 0.45476582981681524
+Of 40974 actions, 1430 were seen and 0 have changed.
+
+KR can get 0.5396365447242994
+Of 20018 actions, 544 were seen and 0 have changed.
+
+KH can get 0.6665934212505522
+Of 58471 actions, 2484 were seen and 370 have changed.
+
+AW can get 0.517876048518612
+Of 10558 actions, 733 were seen and 0 have changed.
+
+AR can get 0.4691245411973315
+Of 29002 actions, 810 were seen and 0 have changed.
+
+AH can get 0.49454907396021724
+Of 15742 actions, 326 were seen and 46 have changed.
+
+WR can get 0.6280321523517359
+Of 29002 actions, 2412 were seen and 5 have changed.
+
+WH can get 0.6394230185501861
+Of 15742 actions, 782 were seen and 53 have changed.
+
+RH can get 0.7228887194609067
+Of 42307 actions, 2026 were seen and 230 have changed.
+
+RH is the meta after 18 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5123581657275025
+Of 40973 actions, 1849 were seen and 2 have changed.
+
+KW can get 0.5417244511567694
+Of 40973 actions, 3071 were seen and 0 have changed.
+
+KR can get 0.43009066405363006
+Of 20017 actions, 418 were seen and 0 have changed.
+
+KH can get 0.5550250147724367
+Of 58470 actions, 4267 were seen and 543 have changed.
+
+AW can get 0.3612468277059127
+Of 10557 actions, 579 were seen and 0 have changed.
+
+AR can get 0.42925512716532543
+Of 29001 actions, 931 were seen and 0 have changed.
+
+AH can get 0.4123401028258967
+Of 15741 actions, 491 were seen and 5 have changed.
+
+WR can get 0.47501299562125704
+Of 29001 actions, 1750 were seen and 1 have changed.
+
+WH can get 0.44063276861788797
+Of 15741 actions, 1419 were seen and 144 have changed.
+
+RH can get 0.4999982418302842
+Of 42306 actions, 1732 were seen and 49 have changed.
+
+KH is the meta after 19 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.4751612355492069
+Of 40972 actions, 4265 were seen and 10 have changed.
+
+KW can get 0.39334244890361103
+Of 40972 actions, 3628 were seen and 8 have changed.
+
+KR can get 0.39767180774265964
+Of 20016 actions, 787 were seen and 4 have changed.
+
+KH can get 0.5426351132071059
+Of 58469 actions, 7826 were seen and 1289 have changed.
+
+AW can get 0.548833159632772
+Of 10556 actions, 908 were seen and 0 have changed.
+
+AR can get 0.46040438592128075
+Of 29000 actions, 2432 were seen and 0 have changed.
+
+AH can get 0.6405582500729894
+Of 15740 actions, 1845 were seen and 8 have changed.
+
+WR can get 0.535856912011518
+Of 29000 actions, 3775 were seen and 0 have changed.
+
+WH can get 0.5815069515419653
+Of 15740 actions, 1869 were seen and 238 have changed.
+
+RH can get 0.5370089215996
+Of 42305 actions, 5263 were seen and 346 have changed.
+
+AH is the meta after 20 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5045633409528244
+Of 40971 actions, 1722 were seen and 3 have changed.
+
+KW can get 0.41426455777367277
+Of 40971 actions, 1767 were seen and 4 have changed.
+
+KR can get 0.48246104781418286
+Of 20015 actions, 1279 were seen and 4 have changed.
+
+KH can get 0.5507291344730296
+Of 58468 actions, 1813 were seen and 290 have changed.
+
+AW can get 0.49442161050173716
+Of 10555 actions, 507 were seen and 0 have changed.
+
+AR can get 0.5097571680412399
+Of 28999 actions, 1367 were seen and 0 have changed.
+
+AH can get 0.5702279006480522
+Of 15739 actions, 498 were seen and 112 have changed.
+
+WR can get 0.5459391849625543
+Of 28999 actions, 1527 were seen and 38 have changed.
+
+WH can get 0.605694093429237
+Of 15739 actions, 512 were seen and 31 have changed.
+
+RH can get 0.5990018387205076
+Of 42304 actions, 1508 were seen and 84 have changed.
+
+WH is the meta after 21 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5190033304754724
+Of 40970 actions, 2053 were seen and 2 have changed.
+
+KW can get 0.45476582981681524
+Of 40970 actions, 1430 were seen and 0 have changed.
+
+KR can get 0.5396365447242994
+Of 20014 actions, 544 were seen and 0 have changed.
+
+KH can get 0.5275482767055895
+Of 58467 actions, 2514 were seen and 174 have changed.
+
+AW can get 0.517876048518612
+Of 10554 actions, 733 were seen and 0 have changed.
+
+AR can get 0.4691245411973315
+Of 28998 actions, 810 were seen and 0 have changed.
+
+AH can get 0.5537249693213623
+Of 15738 actions, 298 were seen and 32 have changed.
+
+WR can get 0.6280321523517359
+Of 28998 actions, 2412 were seen and 35 have changed.
+
+WH can get 0.5917851848764604
+Of 15738 actions, 826 were seen and 33 have changed.
+
+RH can get 0.6520150073756719
+Of 42303 actions, 2005 were seen and 84 have changed.
+
+RH is the meta after 22 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5123581657275025
+Of 40969 actions, 1849 were seen and 2 have changed.
+
+KW can get 0.5417244511567694
+Of 40969 actions, 3071 were seen and 0 have changed.
+
+KR can get 0.43009066405363006
+Of 20013 actions, 418 were seen and 0 have changed.
+
+KH can get 0.49816608665962253
+Of 58466 actions, 3092 were seen and 163 have changed.
+
+AW can get 0.3612468277059127
+Of 10553 actions, 579 were seen and 0 have changed.
+
+AR can get 0.42925512716532543
+Of 28997 actions, 931 were seen and 0 have changed.
+
+AH can get 0.4127480527993177
+Of 15737 actions, 436 were seen and 31 have changed.
+
+WR can get 0.47501299562125704
+Of 28997 actions, 1750 were seen and 4 have changed.
+
+WH can get 0.40199158968184034
+Of 15737 actions, 1367 were seen and 62 have changed.
+
+RH can get 0.4999982418302842
+Of 42302 actions, 1582 were seen and 27 have changed.
+
+KW is the meta after 23 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.6062824692072785
+Of 40968 actions, 1489 were seen and 3 have changed.
+
+KW can get 0.5026412261239702
+Of 40968 actions, 2683 were seen and 58 have changed.
+
+KR can get 0.44132001976383034
+Of 20012 actions, 306 were seen and 0 have changed.
+
+KH can get 0.697535005291592
+Of 58465 actions, 5691 were seen and 792 have changed.
+
+AW can get 0.7300745951387532
+Of 10552 actions, 1235 were seen and 0 have changed.
+
+AR can get 0.6456068978966395
+Of 28996 actions, 2471 were seen and 0 have changed.
+
+AH can get 0.6691101590997752
+Of 15736 actions, 1633 were seen and 170 have changed.
+
+WR can get 0.6260410557072114
+Of 28996 actions, 3844 were seen and 158 have changed.
+
+WH can get 0.5452335370680291
+Of 15736 actions, 454 were seen and 0 have changed.
+
+RH can get 0.6679015033185145
+Of 42301 actions, 3089 were seen and 363 have changed.
+
+AW is the meta after 24 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.7811088507669741
+Of 40967 actions, 1764 were seen and 210 have changed.
+
+KW can get 0.3977040048018934
+Of 40967 actions, 2062 were seen and 394 have changed.
+
+KR can get 0.35690788462559364
+Of 20011 actions, 497 were seen and 55 have changed.
+
+KH can get 0.5707147658554977
+Of 58464 actions, 1677 were seen and 347 have changed.
+
+AW can get 0.5721991983925057
+Of 10551 actions, 832 were seen and 121 have changed.
+
+AR can get 0.7325645210445297
+Of 28995 actions, 1353 were seen and 166 have changed.
+
+AH can get 0.6750286661898028
+Of 15735 actions, 687 were seen and 114 have changed.
+
+WR can get 0.7148217061351527
+Of 28995 actions, 1729 were seen and 245 have changed.
+
+WH can get 0.6407735028226111
+Of 15735 actions, 836 were seen and 151 have changed.
+
+RH can get 0.6669615374946676
+Of 42300 actions, 1329 were seen and 344 have changed.
+
+KA is the meta after 25 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5129550518589168
+Of 40966 actions, 2883 were seen and 91 have changed.
+
+KW can get 0.3948691989828964
+Of 40966 actions, 3694 were seen and 35 have changed.
+
+KR can get 0.28825245104613717
+Of 20010 actions, 701 were seen and 5 have changed.
+
+KH can get 0.549126445857532
+Of 58463 actions, 4571 were seen and 487 have changed.
+
+AW can get 0.24384800879343219
+Of 10550 actions, 1146 were seen and 33 have changed.
+
+AR can get 0.3286983097311147
+Of 28994 actions, 2238 were seen and 1 have changed.
+
+AH can get 0.5611665489911298
+Of 15734 actions, 1421 were seen and 118 have changed.
+
+WR can get 0.5700592262908313
+Of 28994 actions, 2731 were seen and 8 have changed.
+
+WH can get 0.6055727847934503
+Of 15734 actions, 1813 were seen and 266 have changed.
+
+RH can get 0.5806400090421433
+Of 42299 actions, 4137 were seen and 444 have changed.
+
+WH is the meta after 26 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.5159565895512819
+Of 40965 actions, 2013 were seen and 135 have changed.
+
+KW can get 0.45476582981681524
+Of 40965 actions, 1430 were seen and 0 have changed.
+
+KR can get 0.5396365447242994
+Of 20009 actions, 544 were seen and 0 have changed.
+
+KH can get 0.5275482767055895
+Of 58462 actions, 2514 were seen and 0 have changed.
+
+AW can get 0.49504540230248695
+Of 10549 actions, 807 were seen and 33 have changed.
+
+AR can get 0.4691245411973315
+Of 28993 actions, 810 were seen and 0 have changed.
+
+AH can get 0.5537249693213623
+Of 15733 actions, 298 were seen and 0 have changed.
+
+WR can get 0.6280321523517359
+Of 28993 actions, 2412 were seen and 45 have changed.
+
+WH can get 0.537746488905574
+Of 15733 actions, 797 were seen and 39 have changed.
+
+RH can get 0.6568523427179741
+Of 42298 actions, 1963 were seen and 57 have changed.
+
+RH is the meta after 27 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.45803283346567797
+Of 40964 actions, 1892 were seen and 137 have changed.
+
+KW can get 0.47375855033832137
+Of 40964 actions, 2870 were seen and 84 have changed.
+
+KR can get 0.43009066405363006
+Of 20008 actions, 424 were seen and 1 have changed.
+
+KH can get 0.49816608665962253
+Of 58461 actions, 3096 were seen and 0 have changed.
+
+AW can get 0.3475688523566453
+Of 10548 actions, 606 were seen and 29 have changed.
+
+AR can get 0.4292551220799958
+Of 28992 actions, 931 were seen and 0 have changed.
+
+AH can get 0.4127480527993177
+Of 15732 actions, 436 were seen and 0 have changed.
+
+WR can get 0.47501299562125704
+Of 28992 actions, 1750 were seen and 10 have changed.
+
+WH can get 0.3871485290720057
+Of 15732 actions, 1332 were seen and 26 have changed.
+
+RH can get 0.4999982418302842
+Of 42297 actions, 1199 were seen and 4 have changed.
+
+RH is the meta after 28 iterations.
+~~~~~~~~~~~~~~~~
+KA can get 0.45803283346567797
+Of 40963 actions, 1892 were seen and 0 have changed.
+
+KW can get 0.47375855033832137
+Of 40963 actions, 2870 were seen and 0 have changed.
+
+KR can get 0.43009066405363006
+Of 20007 actions, 424 were seen and 0 have changed.
+
+KH can get 0.49816608665962253
+Of 58460 actions, 3096 were seen and 0 have changed.
+
+AW can get 0.3475688523566453
+Of 10547 actions, 606 were seen and 0 have changed.
+
+AR can get 0.4292551220799958
+Of 28991 actions, 931 were seen and 0 have changed.
+
+AH can get 0.4127480527993177
+Of 15731 actions, 436 were seen and 0 have changed.
+
+WR can get 0.47501299562125704
+Of 28991 actions, 1750 were seen and 0 have changed.
+
+WH can get 0.3871485290720057
+Of 15731 actions, 1332 were seen and 0 have changed.
+
+RH can get 0.4999982418302842
+Of 42296 actions, 1199 were seen and 0 have changed.
+
+RH is the meta after 29 iterations.
+~~~~~~~~~~~~~~~~
+Dominant strategy identified.
+Generation finished, building final table
+0% complete
+5% complete
+10% complete
+15% complete
+20% complete
+25% complete
+30% complete
+35% complete
+40% complete
+45% complete
+50% complete
+55% complete
+60% complete
+65% complete
+70% complete
+75% complete
+80% complete
+85% complete
+90% complete
+95% complete
+
+Row vs Column, average at end.
+KA	0.5	0.605	0.711	0.450	0.756	0.671	0.438	0.429	0.515	0.458	:	0.5538
+KW	0.394	0.5	0.558	0.302	0.397	0.354	0.330	0.373	0.454	0.473	:	0.4141
+KR	0.288	0.441	0.5	0.397	0.356	0.350	0.482	0.263	0.539	0.430	:	0.4050
+KH	0.549	0.697	0.602	0.5	0.570	0.539	0.550	0.464	0.527	0.498	:	0.5499
+AW	0.243	0.602	0.643	0.429	0.5	0.267	0.324	0.285	0.494	0.346	:	0.4137
+AR	0.328	0.645	0.649	0.460	0.732	0.5	0.509	0.331	0.469	0.429	:	0.5056
+AH	0.561	0.669	0.517	0.449	0.675	0.490	0.5	0.454	0.553	0.412	:	0.5282
+WR	0.570	0.626	0.736	0.535	0.714	0.668	0.545	0.5	0.628	0.475	:	0.6000
+WH	0.484	0.545	0.460	0.472	0.505	0.530	0.446	0.371	0.5	0.387	:	0.4703
+RH	0.541	0.526	0.569	0.501	0.653	0.570	0.587	0.524	0.612	0.5	:	0.5589
+	KA	KW	KR	KH	AW	AR	AH	WR	WH	RH		Avg
+
+K gets an average of: 0.480756
+A gets an average of: 0.500359
+W gets an average of: 0.474561
+R gets an average of: 0.517423
+H gets an average of: 0.526899
