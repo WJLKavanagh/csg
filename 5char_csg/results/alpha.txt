@@ -1,4 +1,4 @@
-What configuration are you using: alpha
+figuration are you using: alpha
 What output destination do you want: output
 ~~~~~~~~~~~~~~~~
 KA can get 0.6575011584524412
@@ -257,4 +257,45 @@ Of 22617 actions, 378 were seen and 0 have changed.
 
 WR is the meta after 7 iterations.
 ~~~~~~~~~~~~~~~~
-Dominant strategy found
+Dominant strategy identified.
+Generation finished, building final table
+0% complete
+5% complete
+10% complete
+15% complete
+20% complete
+25% complete
+30% complete
+35% complete
+40% complete
+45% complete
+50% complete
+55% complete
+60% complete
+65% complete
+70% complete
+75% complete
+80% complete
+85% complete
+90% complete
+95% complete
+
+Row vs Column, average at end.
+KA	0.5	0.401	0.271	0.417	0.540	0.375	0.501	0.156	0.348	0.280	:	0.3791
+KW	0.598	0.5	0.465	0.472	0.568	0.442	0.550	0.397	0.489	0.414	:	0.4900
+KR	0.728	0.534	0.5	0.506	0.761	0.587	0.815	0.410	0.590	0.552	:	0.5988
+KH	0.582	0.527	0.493	0.5	0.618	0.509	0.524	0.423	0.579	0.433	:	0.5192
+AW	0.459	0.431	0.238	0.381	0.5	0.354	0.466	0.184	0.329	0.173	:	0.3519
+AR	0.624	0.557	0.412	0.490	0.645	0.5	0.662	0.332	0.530	0.383	:	0.5138
+AH	0.498	0.449	0.184	0.475	0.533	0.337	0.5	0.077	0.449	0.213	:	0.3720
+WR	0.843	0.602	0.589	0.576	0.815	0.667	0.922	0.5	0.675	0.594	:	0.6786
+WH	0.651	0.510	0.409	0.420	0.670	0.469	0.550	0.324	0.5	0.304	:	0.4811
+RH	0.719	0.585	0.447	0.566	0.826	0.616	0.786	0.405	0.695	0.5	:	0.6150
+	KA	KW	KR	KH	AW	AR	AH	WR	WH	RH		Avg
+
+K gets an average of: 0.496820
+A gets an average of: 0.404229
+W gets an average of: 0.500460
+R gets an average of: 0.601605
+H gets an average of: 0.496884
+

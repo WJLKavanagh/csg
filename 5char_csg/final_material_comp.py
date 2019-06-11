@@ -1,4 +1,4 @@
-import datetime, os
+import datetime, os #, strategy_reverse
 
 def find_result(file):
     # Take a log file, return the value found by MCing.
@@ -82,4 +82,11 @@ def run(iter, file_prefix, configuration):
                 num_involvement += 1
         print(char, "gets an average of: " + str(total_average/num_involvement)[:8])
 
-#run(26,"output","zeta")
+# chars = ["K","A","W","R","H"]
+# pairs = []
+# for i in range(len(chars)):
+#     for j in range(i+1,len(chars)):
+#         pairs += [chars[i] + chars[j]]
+# for pair in pairs[1:]:
+#     strategy_reverse.run(pair, 78, "output")
+#run(78,"output","alpha_updated")

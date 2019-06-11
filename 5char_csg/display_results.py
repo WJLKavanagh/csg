@@ -65,7 +65,7 @@ ax.plot(xseries, [0.5]*len(xseries), "--")
 plt.ylabel('maximum probability of winning')
 plt.xlabel('iteration')
 plt.grid(b=True, markevery=1)
-plt.title("Metagame plot for: " + f)
+plt.title("Metagame plot")
 legend = ax.legend(fontsize=12)
 
 fig1, ax2 = plt.subplots()
