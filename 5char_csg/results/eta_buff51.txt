@@ -1377,6 +1377,7 @@ Of 42283 actions, 1220 were seen and 0 have changed.
 
 RH is the meta after 42 iterations.
 ~~~~~~~~~~~~~~~~
+Dominant strategy identified.
 Generation finished, building final table
 0% complete
 5% complete

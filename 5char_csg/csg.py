@@ -92,6 +92,7 @@ k += 1
     else ->
         Stop. 'the meta' is a dominant strategy.
 """
+edge_case_caught = False
 something_is_new = True
 while something_is_new: # and loop_check(k-1):
     something_is_new = False
@@ -117,7 +118,12 @@ while something_is_new: # and loop_check(k-1):
             something_is_new = True
     meta_pair = best_pair_this_it
     print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
+    if not something_is_new and best_probability > 0.5:
+        something_is_new = True
+        edge_case_caught = True
     k = k + 1
+if edge_case_caught: print("Strategies have converged - Edge case caught.")
+else: print("Strategies have converged.")
 print("Generation finished, building final table")
 for pair in pairs[1:]:
     strategy_reverse.run(pair, k-1, output)
