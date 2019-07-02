@@ -51,7 +51,7 @@ def run(file_prefix, pair, i):
     f.write("// Generated strategy for " + pair + " at a later iteration \n")
     f.write(open("forced_p2_moves.txt","r").read())     # print forced actions
     # read in the previous strategy as a dictionary
-    old_strategy = open(file_prefix + "/" + pair + "_strategy_" + str(i-1) + ".txt", "r").readlines()[471:]
+    old_strategy = open(file_prefix + "/" + pair + "_strategy_" + str(i-1) + ".txt", "r").readlines()[470:]
     for i in range(len(old_strategy)):
         if "[p2" in old_strategy[i]:    # if the line begins a guard
             state_desc = "0,2,"

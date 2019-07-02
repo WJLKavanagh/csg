@@ -25,7 +25,8 @@ count = 1
 f = input("What file are we parsing: ")
 lines = open(f, "r").readlines()
 for i in range(len(lines)-2):
-    if "~~~~" in lines[i] and "can get" in lines[i+1]:
+
+    if "Loop identified" in lines[i] and "can get" in lines[i+1]:
         xseries+=[count]
         count+=1
         KA+=[float(lines[i+1].split(" ")[3])]
@@ -49,8 +50,11 @@ for i in range(len(lines)-2):
             WR_change += [float(int(lines[i+23].split(" ")[-3]) / int(lines[i+23].split(" ")[3]))]
             WH_change += [float(int(lines[i+26].split(" ")[-3]) / int(lines[i+26].split(" ")[3]))]
             RH_change += [float(int(lines[i+29].split(" ")[-3]) / int(lines[i+29].split(" ")[3]))]
-    if "Cycle found of length" in lines[i]:
-        loop_length = int(lines[i].split(" ")[-1])
+    if "At iteration " in lines[i]:
+        loop_end = int(lines[i].split(" ")[2])
+        loop_start = int(lines[i].split(" ")[-1])
+
+print(KA)
 
 fig, ax = plt.subplots()
 ax.plot(xseries, KA, label="KA")
@@ -64,7 +68,7 @@ ax.plot(xseries, WR, label="WR")
 ax.plot(xseries, WH, label="WH")
 ax.plot(xseries, RH, label="RH")
 ax.plot(xseries, [0.5]*(len(xseries)), "--")
-ax.axvline(x=(xseries[-1]-loop_length), label="loop starts")
+ax.axvline(x=loop_start, ymin=0.05, ymax=0.95, label="loop starts")
 #ax.axvline(x=loop_end, ymin=0.05, ymax=0.95, label="loop ends")
 plt.ylabel('maximum probability of winning')
 plt.xlabel('iteration')
@@ -87,8 +91,8 @@ ax2.plot(xseries, WR_change, label="WR-change")
 ax2.plot(xseries, WH_change, label="WH-change")
 ax2.plot(xseries, RH_change, label="RH-change")
 ax2.plot(xseries, [0]*len(xseries), "--")
-ax2.axvline(x=(xseries[-1]-loop_length), ymin=0, ymax=0.5, label="loop starts")
-#ax2.axvline(x=loop_end, ymin=0, ymax=0.5, label="loop ends")
+ax2.axvline(x=loop_start, ymin=0, ymax=0.5, label="loop starts")
+ax2.axvline(x=loop_end, ymin=0, ymax=0.5, label="loop ends")
 legend = ax2.legend(fontsize=10)
 
 plt.tight_layout()

@@ -82,6 +82,8 @@ def run(iter, file_prefix, configuration):
                 num_involvement += 1
         print(char, "gets an average of: " + str(total_average/num_involvement)[:8])
 
+
+
 # chars = ["K","A","W","R","H"]
 # pairs = []
 # for i in range(len(chars)):

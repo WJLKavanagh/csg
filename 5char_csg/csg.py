@@ -32,18 +32,20 @@ def find_result(file):
             return f[i].split("ult: ")[1].split(" (value")[0]
 
 def loop_check(j):
-    # Compare every <pair>_strategy_j.txt to <pair>_strategy_p.txt (p<j) to make sure we aren't in a loop
+    # Compare every <pair>_strategy_j-1.txt to <pair>_strategy_p.txt (p<j-1) to make sure we aren't in a loop
+    # Return loop length (0 if no loop)
     global output
-    if j < 2: return True
-    for p in range(j-1, 0, -1):
+    if j < 2: return 0
+    for p in range(1, j-1):
         all_clear = False
         for pair in pairs:
-            if not filecmp.cmp(output+"/"+pair+"_strategy_"+str(j)+".txt", output+"/"+pair+"_strategy_"+str(p)+".txt", shallow=False):
+            if not filecmp.cmp(output+"/"+pair+"_strategy_"+str(j-1)+".txt", output+"/"+pair+"_strategy_"+str(p)+".txt", shallow=False):
                 all_clear = True
+                break
         if not all_clear:
-            print("At iteration " + str(j) + " strategies are identical to at iteration " + str(p))
-            return False
-    return True
+            #print("At iteration " + str(j-1) + " strategies are identical to at iteration " + str(p))
+            return j-1-p
+    return 0
 
 # setup
 config = input("What configuration are you using: ").lower()
@@ -92,10 +94,9 @@ k += 1
     else ->
         Stop. 'the meta' is a dominant strategy.
 """
-edge_case_caught = False
-something_is_new = True
-while something_is_new: # and loop_check(k-1):
-    something_is_new = False
+
+best_probability = 0.0
+while loop_check(k) == 0 or (best_probability > 0.5 and loop_check(k) == 1):
     best_probability = 0.0
     best_pair_this_it = "none"
     model_generator.run(output, config, meta_pair, k)       # generate the 10 prism models vs current meta
@@ -114,16 +115,12 @@ while something_is_new: # and loop_check(k-1):
         total, seen, new = strategy_updater.run(output, pair, k)
         # print how many transitions have been updated
         print("Of " + str(total) + " actions, " + str(seen) + " were seen and " + str(new) +  " have changed.\n")
-        if new > 0:
-            something_is_new = True
     meta_pair = best_pair_this_it
     print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
-    if not something_is_new and best_probability > 0.5:
-        something_is_new = True
-        edge_case_caught = True
     k = k + 1
-if edge_case_caught: print("Strategies have converged - Edge case caught.")
-else: print("Strategies have converged.")
+loop_size = loop_check(k)
+if loop_size != 1: print("Dominant strategy identified")
+else: print("Cycle found of length:", loop_size)
 print("Generation finished, building final table")
 for pair in pairs[1:]:
     strategy_reverse.run(pair, k-1, output)
