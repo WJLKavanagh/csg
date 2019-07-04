@@ -289,8 +289,7 @@ Of 22624 actions, 378 were seen and 0 have changed.
 
 WR is the meta after 8 iterations.
 ~~~~~~~~~~~~~~~~
-At iteration 8 strategies are identical to at iteration 7
-Loop identified, length 1
+Cycle found of length: 1
 Generation finished, building final table
 0% complete
 5% complete

@@ -142,31 +142,31 @@ for char in chars:
 
 char_dict = {"K":"Knight","A":"Archer","W":"Wizard","R":"Rogue","H":"Healer"}
 
-# # now plot both limits against eachother
-# ax.plot(lims, lims, 'k-', alpha=0.75, zorder=0)
-# ax.set_aspect('equal')
-# ax.set_xlim(lims)
-# ax.set_ylim(lims)
-# ax.set_title("Pair-wise metagame analysis: " + sys.argv[1].split("/")[1].split(".txt")[0])
-# ax.legend()
-# plt.xlabel("robustness")
-# plt.ylabel("win rate")
-# plt.tight_layout()
+# now plot both limits against eachother
+ax.plot(lims, lims, 'k-', alpha=0.75, zorder=0)
+ax.set_aspect('equal')
+ax.set_xlim(lims)
+ax.set_ylim(lims)
+ax.set_title("Pair-wise metagame analysis: " + sys.argv[1].split("/")[1].split(".txt")[0])
+ax.legend()
+plt.xlabel("robustness")
+plt.ylabel("win rate")
+plt.tight_layout()
 
 fig, ax2 = plt.subplots()
 for char in chars:
     ax2.scatter(char_metric_dictionary[char]["pick_rate"], char_metric_dictionary[char]["change_rate"], label=char_dict[char], marker = 5, s=75)
 ax2.legend()
 
-# Draw f(x) = y
-# lims = [
-#     np.min([ax2.get_xlim(), ax2.get_ylim()]),  # min of both axes
-#     np.max([ax2.get_xlim(), ax2.get_ylim()]),  # max of both axes
-# ]
-# ax2.plot(lims, lims, 'k-', alpha=0.75, zorder=0)
-# ax2.set_aspect('equal')
-# ax2.set_xlim(lims)
-# ax2.set_ylim(lims)
+#Draw f(x) = y
+lims = [
+    np.min([ax2.get_xlim(), ax2.get_ylim()]),  # min of both axes
+    np.max([ax2.get_xlim(), ax2.get_ylim()]),  # max of both axes
+]
+ax2.plot(lims, lims, 'k-', alpha=0.75, zorder=0)
+ax2.set_aspect('equal')
+ax2.set_xlim(lims)
+ax2.set_ylim(lims)
 
 ax2.set_title("Character-wise metagame analysis: " + sys.argv[1].split("/")[1].split(".txt")[0])
 
@@ -175,13 +175,13 @@ plt.xlabel("Fairness - character viability")
 plt.ylabel("Interest - strategy variation")
 plt.tight_layout()
 
-# ind = np.arange(len(chars))
-# fig, ax3 = plt.subplots()
-# max_it = plt.plot([0,1,2,3,4], [len(meta_values)]*5, "--")
-# base = plt.bar(ind, char_meta_count)
-# extra = plt.bar(ind, char_near_meta_count, bottom = char_meta_count)
-# plt.legend((base[0],extra[0]),("on meta","near meta (3%)"))
-# plt.xticks(ind, chars)
-# ax3.annotate(xy=[2, len(meta_values)], s = "iterations = " + str(len(meta_values)))
-# ax3.set_title("Character-wise 'on meta'/'near meta' analysis")
+ind = np.arange(len(chars))
+fig, ax3 = plt.subplots()
+max_it = plt.plot([0,1,2,3,4], [len(meta_values)]*5, "--")
+base = plt.bar(ind, char_meta_count)
+extra = plt.bar(ind, char_near_meta_count, bottom = char_meta_count)
+plt.legend((base[0],extra[0]),("on meta","near meta (3%)"))
+plt.xticks(ind, chars)
+ax3.annotate(xy=[2, len(meta_values)], s = "iterations = " + str(len(meta_values)))
+ax3.set_title("Character-wise 'on meta'/'near meta' analysis")
 plt.show()

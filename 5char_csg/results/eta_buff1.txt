@@ -743,7 +743,7 @@ Of 40992 actions, 1823 were seen and 0 have changed.
 KW can get 0.4275991643265717
 Of 40992 actions, 3095 were seen and 0 have changed.
 
- KR can get 0.38864504434510505
+KR can get 0.38864504434510505
 Of 20036 actions, 381 were seen and 0 have changed.
 
 KH can get 0.4800502616156645
