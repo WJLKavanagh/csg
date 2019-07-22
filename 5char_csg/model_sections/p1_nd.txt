@@ -1,0 +1,115 @@
+// P1:
+	[p1_K_K] attack = 0 & turn = 1 & p1K > 0 & p1_stun != 1 & p2K > 0 ->
+		 (attack' = 1) & (p1_stun' = 0);
+	[p1_K_A] attack = 0 & turn = 1 & p1K > 0 & p1_stun != 1 & p2A > 0 ->
+		 (attack' = 2) & (p1_stun' = 0);
+	[p1_K_W] attack = 0 & turn = 1 & p1K > 0 & p1_stun != 1 & p2W > 0 ->
+		 (attack' = 3) & (p1_stun' = 0);
+	[p1_K_R] attack = 0 & turn = 1 & p1K > 0 & p1_stun != 1 & p2R > 0 ->
+		 (attack' = 4) & (p1_stun' = 0);
+	[p1_K_H] attack = 0 & turn = 1 & p1K > 0 & p1_stun != 1 & p2H > 0 ->
+		 (attack' = 5) & (p1_stun' = 0);
+	[p1_A_K] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 ->
+		 (attack' = 6) & (p1_stun' = 0);
+	[p1_A_KA] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2A > 0 ->
+		 (attack' = 7) & (p1_stun' = 0);
+	[p1_A_KW] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2W > 0 ->
+		 (attack' = 8) & (p1_stun' = 0);
+	[p1_A_KR] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2R > 0 ->
+		 (attack' = 9) & (p1_stun' = 0);
+	[p1_A_KH] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2H > 0 ->
+		 (attack' = 10) & (p1_stun' = 0);
+	[p1_A_A] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 ->
+		 (attack' = 11) & (p1_stun' = 0);
+	[p1_A_AW] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 & p2W > 0 ->
+		 (attack' = 12) & (p1_stun' = 0);
+	[p1_A_AR] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 & p2R > 0 ->
+		 (attack' = 13) & (p1_stun' = 0);
+	[p1_A_AH] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 & p2H > 0 ->
+		 (attack' = 14) & (p1_stun' = 0);
+	[p1_A_W] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2W > 0 ->
+		 (attack' = 15) & (p1_stun' = 0);
+	[p1_A_WR] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2W > 0 & p2R > 0 ->
+		 (attack' = 16) & (p1_stun' = 0);
+	[p1_A_WH] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2W > 0 & p2H > 0 ->
+		 (attack' = 17) & (p1_stun' = 0);
+	[p1_A_R] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2R > 0 ->
+		 (attack' = 18) & (p1_stun' = 0);
+	[p1_A_RH] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2R > 0 & p2H > 0 ->
+		 (attack' = 19) & (p1_stun' = 0);
+	[p1_A_H] attack = 0 & turn = 1 & p1A > 0 & p1_stun != 2 & p2H > 0 ->
+		 (attack' = 20) & (p1_stun' = 0);
+	[p1_W_K] attack = 0 & turn = 1 & p1W > 0 & p1_stun != 3 & p2K > 0 ->
+		 (attack' = 21) & (p1_stun' = 0);
+	[p1_W_A] attack = 0 & turn = 1 & p1W > 0 & p1_stun != 3 & p2A > 0 ->
+		 (attack' = 22) & (p1_stun' = 0);
+	[p1_W_W] attack = 0 & turn = 1 & p1W > 0 & p1_stun != 3 & p2W > 0 ->
+		 (attack' = 23) & (p1_stun' = 0);
+	[p1_W_R] attack = 0 & turn = 1 & p1W > 0 & p1_stun != 3 & p2R > 0 ->
+		 (attack' = 24) & (p1_stun' = 0);
+	[p1_W_H] attack = 0 & turn = 1 & p1W > 0 & p1_stun != 3 & p2H > 0 ->
+		 (attack' = 25) & (p1_stun' = 0);
+	[p1_R_K] attack = 0 & turn = 1 & p1R > 0 & p1_stun != 4 & p2K > 0 ->
+		 (attack' = 26) & (p1_stun' = 0);
+	[p1_R_A] attack = 0 & turn = 1 & p1R > 0 & p1_stun != 4 & p2A > 0 ->
+		 (attack' = 27) & (p1_stun' = 0);
+	[p1_R_W] attack = 0 & turn = 1 & p1R > 0 & p1_stun != 4 & p2W > 0 ->
+		 (attack' = 28) & (p1_stun' = 0);
+	[p1_R_R] attack = 0 & turn = 1 & p1R > 0 & p1_stun != 4 & p2R > 0 ->
+		 (attack' = 29) & (p1_stun' = 0);
+	[p1_R_H] attack = 0 & turn = 1 & p1R > 0 & p1_stun != 4 & p2H > 0 ->
+		 (attack' = 30) & (p1_stun' = 0);
+	[p1_H_KK] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1K > 0 ->
+		 (attack' = 31) & (p1_stun' = 0);
+	[p1_H_KA] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1A > 0 ->
+		 (attack' = 32) & (p1_stun' = 0);
+	[p1_H_KW] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1W > 0 ->
+		 (attack' = 33) & (p1_stun' = 0);
+	[p1_H_KR] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1R > 0 ->
+		 (attack' = 34) & (p1_stun' = 0);
+	[p1_H_KH] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1H > 0 ->
+		 (attack' = 35) & (p1_stun' = 0);
+	[p1_H_AK] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1K > 0 ->
+		 (attack' = 36) & (p1_stun' = 0);
+	[p1_H_AA] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1A > 0 ->
+		 (attack' = 37) & (p1_stun' = 0);
+	[p1_H_AW] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1W > 0 ->
+		 (attack' = 38) & (p1_stun' = 0);
+	[p1_H_AR] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1R > 0 ->
+		 (attack' = 39) & (p1_stun' = 0);
+	[p1_H_AH] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1H > 0 ->
+		 (attack' = 40) & (p1_stun' = 0);
+	[p1_H_WK] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1K > 0 ->
+		 (attack' = 41) & (p1_stun' = 0);
+	[p1_H_WA] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1A > 0 ->
+		 (attack' = 42) & (p1_stun' = 0);
+	[p1_H_WW] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1W > 0 ->
+		 (attack' = 43) & (p1_stun' = 0);
+	[p1_H_WR] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1R > 0 ->
+		 (attack' = 44) & (p1_stun' = 0);
+	[p1_H_WH] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1H > 0 ->
+		 (attack' = 45) & (p1_stun' = 0);
+	[p1_H_RK] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1K > 0 ->
+		 (attack' = 46) & (p1_stun' = 0);
+	[p1_H_RA] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1A > 0 ->
+		 (attack' = 47) & (p1_stun' = 0);
+	[p1_H_RW] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1W > 0 ->
+		 (attack' = 48) & (p1_stun' = 0);
+	[p1_H_RR] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1R > 0 ->
+		 (attack' = 49) & (p1_stun' = 0);
+	[p1_H_RH] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1H > 0 ->
+		 (attack' = 50) & (p1_stun' = 0);
+	[p1_H_HK] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1K > 0 ->
+		 (attack' = 51) & (p1_stun' = 0);
+	[p1_H_HA] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1A > 0 ->
+		 (attack' = 52) & (p1_stun' = 0);
+	[p1_H_HW] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1W > 0 ->
+		 (attack' = 53) & (p1_stun' = 0);
+	[p1_H_HR] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1R > 0 ->
+		 (attack' = 54) & (p1_stun' = 0);
+	[p1_H_HH] attack = 0 & turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1H > 0 ->
+		 (attack' = 55) & (p1_stun' = 0);
+
+// Forced skip
+  [p1_skip]	attack = 0 & turn = 1 & p1_sum > 0 & (p1K = 0 | p1_stun = 1) & (p1A = 0 | p1_stun = 2) & (p1W = 0 | p1_stun = 3) & (p1R = 0 | p1_stun = 4) & ( p1H = 0 | p1_stun = 5) ->
+	       (p1_stun' = 0) & (turn' = 2);

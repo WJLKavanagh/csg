@@ -1,0 +1,26 @@
+
+player p1
+	[p1_K_K],	[p1_K_A],	[p1_K_W],	[p1_K_R],	[p1_K_H],	[p1_A_K],	[p1_A_KA],	[p1_A_KW],
+	[p1_A_KR],	[p1_A_KH],	[p1_A_A],	[p1_A_AW],	[p1_A_AR],	[p1_A_AH],	[p1_A_W],	[p1_A_WR],
+	[p1_A_WH],	[p1_A_R],	[p1_A_RH],	[p1_A_H],	[p1_W_K],	[p1_W_A],	[p1_W_W],	[p1_W_R],
+	[p1_W_H],	[p1_R_K],	[p1_R_A],	[p1_R_W],	[p1_R_R],	[p1_R_H],	[p1_H_KK],	[p1_H_KA],
+	[p1_H_KW],	[p1_H_KR],	[p1_H_KH],	[p1_H_AK],	[p1_H_AA],	[p1_H_AW],	[p1_H_AR],	[p1_H_AH],
+	[p1_H_WK],	[p1_H_WA],	[p1_H_WW],	[p1_H_WR],	[p1_H_WH],	[p1_H_RK],	[p1_H_RA],	[p1_H_RW],
+	[p1_H_RR],	[p1_H_RH],	[p1_H_HK],	[p1_H_HA],	[p1_H_HW],	[p1_H_HR],	[p1_H_HH]
+endplayer
+
+player p2
+	[p2_K_K],	[p2_K_A],	[p2_K_W],	[p2_K_R],	[p2_K_H],	[p2_A_K],	[p2_A_KA],	[p2_A_KW],
+	[p2_A_KR],	[p2_A_KH],	[p2_A_A],	[p2_A_AW],	[p2_A_AR],	[p2_A_AH],	[p2_A_W],	[p2_A_WR],
+	[p2_A_WH],	[p2_A_R],	[p2_A_RH],	[p2_A_H],	[p2_W_K],	[p2_W_A],	[p2_W_W],	[p2_W_R],
+	[p2_W_H],	[p2_R_K],	[p2_R_A],	[p2_R_W],	[p2_R_R],	[p2_R_H],	[p2_H_KK],	[p2_H_KA],
+	[p2_H_KW],	[p2_H_KR],	[p2_H_KH],	[p2_H_AK],	[p2_H_AA],	[p2_H_AW],	[p2_H_AR],	[p2_H_AH],
+	[p2_H_WK],	[p2_H_WA],	[p2_H_WW],	[p2_H_WR],	[p2_H_WH],	[p2_H_RK],	[p2_H_RA],	[p2_H_RW],
+	[p2_H_RR],	[p2_H_RH],	[p2_H_HK],	[p2_H_HA],	[p2_H_HW],	[p2_H_HR],	[p2_H_HH],	[choose_KA],
+	[choose_KW],	[choose_KR],	[choose_KH],	[choose_AW],	[choose_AR],	[choose_AH],	[choose_WR],
+	[choose_WH],	[choose_RH]
+endplayer
+
+module game
+	attack	: [0..110];
+	turn	: [0..2];
