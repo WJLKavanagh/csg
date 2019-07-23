@@ -2,7 +2,7 @@ PRISM-games
 ===========
 
 Version: 4.4.dev
-Date: Mon Jul 22 13:43:09 BST 2019
+Date: Tue Jul 23 17:15:35 BST 2019
 Hostname: wkav-B250M-D2V
 Memory limits: cudd=1g, java(heap)=5g
 Command line: prism-games test_output/RH_dominance_check.prism ../properties/smg.props -prop 1 -exportadvmdp test_output/tmp.tra -exportstates test_output/tmp.sta -javamaxmem 5g -nopre -maxiters 300000
@@ -25,18 +25,18 @@ Switching to explicit engine, which supports SMGs...
 
 Building model...
 
-Computing reachable states... 139587 161701 states
-Reachable states exploration and model construction done in 3.396 secs.
+Computing reachable states... 150078 313740 362325 states
+Reachable states exploration and model construction done in 6.957 secs.
 Sorting reachable states list...
 
-Time for model construction: 3.676 seconds.
+Time for model construction: 7.331 seconds.
 
-Warning: Deadlocks detected and fixed in 763 states
+Warning: Deadlocks detected and fixed in 991 states
 
 Type:        SMG
-States:      161701 (1 initial)
-Transitions: 399437
-Choices:     269882
+States:      362325 (1 initial)
+Transitions: 904706
+Choices:     605987
 Max/avg:     10/1.67
 
 Exporting list of reachable states in plain text format to file "test_output/tmp.sta"...
@@ -46,16 +46,16 @@ Exporting list of reachable states in plain text format to file "test_output/tmp
 Model checking: <<p1>> Pmax=? [ F "p1_wins" ]
 
 Starting probabilistic reachability...
-target=53, yes=53, no=0, maybe=161648
+target=69, yes=69, no=0, maybe=362256
 Starting value iteration (maxmin)...
-Value iteration (maxmin) took 605 iterations and 13.116 seconds.
-Probabilistic reachability took 13.195 seconds.
+Value iteration (maxmin) took 545 iterations and 23.097 seconds.
+Probabilistic reachability took 23.202 seconds.
 
-Value in the initial state: 0.33647407987116457
+Value in the initial state: 0.4999982418302841
 
-Time for model checking: 13.207 seconds.
+Time for model checking: 23.228 seconds.
 
-Result: 0.33647407987116457 (value in the initial state)
+Result: 0.4999982418302841 (value in the initial state)
 
 ---------------------------------------------------------------------
 

@@ -1,30 +1,30 @@
 // Author:	William Kavanagh, University of Glasgow
-// Created:	2019-07-22
+// Created:	2019-07-23
 // File:		CSG auto-generated model
 // Comment:	This file is a generator for a later strategy for AW
 smg
-// Configuration DELTA:
-const int Knight_health = 9;
-const int Knight_damage = 4;
-const double Knight_accuracy = 0.5;
+// Configuration ETA_BUFF1:
+const int Knight_health = 10;
+const int Knight_damage = 3;
+const double Knight_accuracy = 0.76;
 
 const int Archer_health = 7;
 const int Archer_damage = 2;
-const double Archer_accuracy = 0.85;
+const double Archer_accuracy = 0.95;
 
 const int Wizard_health = 7;
-const int Wizard_damage = 3;
-const double Wizard_accuracy = 0.8;
+const int Wizard_damage = 2;
+const double Wizard_accuracy = 0.9;
 
-const int Rogue_health = 6;
+const int Rogue_health = 7;
 const int Rogue_damage = 3;
-const int Rogue_execute = 6;
-const double Rogue_accuracy = 0.55;
+const int Rogue_execute = 5;
+const double Rogue_accuracy = 0.75;
 
-const int Healer_health = 7;
+const int Healer_health = 8;
 const int Healer_damage = 2;
 const int Healer_heal = 2;
-const double Healer_accuracy = 0.8;
+const double Healer_accuracy = 0.75;
 
 player p1
 	[p1_K_K],	[p1_K_A],	[p1_K_W],	[p1_K_R],	[p1_K_H],	[p1_A_K],	[p1_A_KA],	[p1_A_KW],
