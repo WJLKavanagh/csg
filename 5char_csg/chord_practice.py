@@ -59,5 +59,8 @@ print("cycle", nx.find_cycle(G))
 
 nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
 plt.axis('off')
+plt.title("Adversarial probabilities against optimal strategy")
+if len(good_nodes) > 0: plt.annotate("Non-dominant cycle = \n" + str(good_nodes), xy = (1,-1), color="red")
+else: plt.annotate("Dominant strategy = \n" + evil_nodes[0], xy = (1,-1), color="red")
 #plt.savefig("results/graphics/" + config + "_optimality_relationship.png")
 plt.show()

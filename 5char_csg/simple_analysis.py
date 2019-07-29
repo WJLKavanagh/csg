@@ -42,6 +42,9 @@ for i in range(i,len(result)):
                 pick_rates[char] += [0]
         total_win_delta = 0
         success_dictionary = {"K":0, "A":0, "W":0, "R":0, "H":0}
+    if "Cycle found" in result[i]: end_point = len(pick_rates["K"]) - int(result[i].split(" ")[-1][:-1])
+
+print(end_point)
 
 fairness = []
 interest = []
