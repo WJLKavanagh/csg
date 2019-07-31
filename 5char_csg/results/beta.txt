@@ -353,8 +353,7 @@ Of 64195 actions, 4786 were seen and 0 have changed.
 
 KA is the meta after 10 iterations.
 ~~~~~~~~~~~~~~~~
-At iteration 10 strategies are identical to at iteration 9
-Loop identified, length 1
+Cycle found of length 1
 Generation finished, building final table
 0% complete
 5% complete
