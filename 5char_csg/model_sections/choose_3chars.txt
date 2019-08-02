@@ -1,0 +1,20 @@
+  [choose_WRH]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2K' = 0) & (p2A' = 0);
+  [choose_ARH]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2K' = 0) & (p2W' = 0);
+  [choose_AWH]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2K' = 0) & (p2R' = 0);
+  [choose_AWR]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2K' = 0) & (p2H' = 0);
+  [choose_KRH]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2A' = 0) & (p2W' = 0);
+  [choose_KWH]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2A' = 0) & (p2R' = 0);
+  [choose_KWR]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2A' = 0) & (p2H' = 0);
+  [choose_KAH]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2W' = 0) & (p2R' = 0);
+  [choose_KAR]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2W' = 0) & (p2H' = 0);
+  [choose_KAW]	p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+    (p2R' = 0) & (p2H' = 0);

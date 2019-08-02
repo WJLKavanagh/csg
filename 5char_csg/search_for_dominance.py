@@ -20,7 +20,7 @@ def find_opponents(file):
         if "choose" in line:
             return line.split("_")[1][:-1]
 
-def run_analysis(config, output):
+def run(config, output):
     # setup
 
     print("~~~~~~~~~~~~~~~~")
@@ -63,9 +63,13 @@ def run_analysis(config, output):
         f.write(open("model_sections/p2_nd.txt").read())
         f.write(open("model_sections/file_suffix.txt").read())
 
+        # Model generated. Now model check..
+
         os.system("prism " + output + "/" + file_name + " ../properties/smg.props \
         -prop 1 -exportadvmdp " + output + "/tmp.tra -exportstates " + output + \
         "/tmp.sta -javamaxmem 5g -nopre -maxiters 300000 > " + output + "/log.txt")
+
+        # Find best pair and optimal probability
 
         print(pair + ":")
         found_opp = find_opponents(output+"/tmp.tra")
@@ -74,13 +78,14 @@ def run_analysis(config, output):
         print("\toptimal probability of: " + minimax + "\n")
         results[pair] = {"res":minimax, "opp":found_opp}
 
+    # Results found for all pairs. Plot results using networkx
 
     plt.subplots(figsize=(14,14))
 
     G = nx.DiGraph()
 
-    evil_nodes = []
-    good_nodes = []
+    evil_nodes = []         # dominant pairs
+    good_nodes = []         # cycle of effective, non-dominant pairs.
 
     for p in results.keys():
         if float(results[p]["res"]) < 0.499 or p != results[p]["opp"]:
@@ -91,7 +96,7 @@ def run_analysis(config, output):
             print("Adding:",p)
     plt.plot()
 
-    #G.set_node_attributes(G, labels, 'colour_group')
+    #G
     if len(evil_nodes) == 0:
         try:
             nx.find_cycle(G)
@@ -101,7 +106,6 @@ def run_analysis(config, output):
         except:
             pass
 
-    print(good_nodes, evil_nodes)
 
     colour_list = []
     for n in G.nodes():
@@ -110,33 +114,36 @@ def run_analysis(config, output):
         else:
             colour_list += [1]
 
-    print(colour_list)
-
+    # create structs for colouring
     carac = pd.DataFrame({'ID':G.nodes(), 'colour_group':colour_list})
     carac= carac.set_index('ID')
     carac=carac.reindex(G.nodes())
     carac['colour_group']=pd.Categorical(carac['colour_group'])
     carac['colour_group'].cat.codes
 
+    # draw labels
     edge_labels=dict([((u,v,),d['weight'])
                  for u,v,d in G.edges(data=True)])
     pos = nx.shell_layout(G)
     nx.draw(G, pos, with_labels=True, font_weight='bold', node_color=carac['colour_group'].cat.codes, cmap=plt.cm.Set1, draw_network_edge_labels = True, node_size=800)
-
-    print("edges", G.edges())
-    print("cycle", nx.find_cycle(G))
-
 
     nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
     plt.axis('off')
     plt.title(config + ": Adversarial probabilities against optimal strategy")
     if len(good_nodes) > 0: plt.annotate("Non-dominant cycle = \n" + str(good_nodes), xy = (1,-1), color="red")
     else: plt.annotate("Dominant strategy = \n" + evil_nodes[0], xy = (1,-1), color="red")
-    plt.savefig("results/graphics/" + config + "_optimality_relationship.png")
+    plt.savefig("results/graphics/" + config + "_optimality_relationship.png")      # Save graph to file
+
+    print("~~~~~~~~~~~~~~~~")
+
+
+    return(results)
 #plt.show()
 
+"""
 configs = sys.argv[1:]
 output = input("What output destination do you want: ")
 for c in configs:
     print("Analysing for configuration: " + c)
-    run_analysis(c, output)
+    print(run_analysis(c, output))
+"""

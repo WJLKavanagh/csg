@@ -70,6 +70,7 @@ for i in range(len(chars)):
     for j in range(i+1,len(chars)):
         for m in range(j+1,len(chars)):
             trips += [chars[i] + chars[j] + chars[m]]
+
 for trip in trips:
     os.system("prism output/" + trip + "_generator.prism ../../properties/mdp.props \
     -prop 1 -exportadvmdp " + output + "/tmp.tra -exportstates " + output + \
@@ -83,6 +84,7 @@ for trip in trips:
     print("Strategy generated, there are: " + str(transition_count) + " transitions.\n")
 print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
 k += 1
+
 """
 2. For m in M:
         calculate stategy'(p1/m) giving max( Pwin(p1) (strategy'(p1/m),'the meta'))
@@ -97,7 +99,7 @@ k += 1
     else ->
         Stop. 'the meta' is a dominant strategy.
 """
-meta_pair = "KRH"
+
 
 best_probability = 0.0
 while loop_check(k) == 0 or (best_probability > 0.5 and loop_check(k) == 1):

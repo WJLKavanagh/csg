@@ -1,0 +1,39 @@
+
+player p1
+	[p1_K_K],	[p1_K_A],	[p1_K_W],	[p1_K_R],	[p1_K_H],	[p1_A_K],	[p1_A_KA],	[p1_A_KW],
+	[p1_A_KR],	[p1_A_KH],	[p1_A_A],	[p1_A_AW],	[p1_A_AR],	[p1_A_AH],	[p1_A_W],	[p1_A_WR],
+	[p1_A_WH],	[p1_A_R],	[p1_A_RH],	[p1_A_H],	[p1_W_K],	[p1_W_A],	[p1_W_W],	[p1_W_R],
+	[p1_W_H],	[p1_R_K],	[p1_R_A],	[p1_R_W],	[p1_R_R],	[p1_R_H],	[p1_H_KK],	[p1_H_KA],
+	[p1_H_KW],	[p1_H_KR],	[p1_H_KH],	[p1_H_AK],	[p1_H_AA],	[p1_H_AW],	[p1_H_AR],	[p1_H_AH],
+	[p1_H_WK],	[p1_H_WA],	[p1_H_WW],	[p1_H_WR],	[p1_H_WH],	[p1_H_RK],	[p1_H_RA],	[p1_H_RW],
+	[p1_H_RR],	[p1_H_RH],	[p1_H_HK],	[p1_H_HA],	[p1_H_HW],	[p1_H_HR],	[p1_H_HH], [p1_skip]
+endplayer
+
+player p2
+	[p2_K_K],	[p2_K_A],	[p2_K_W],	[p2_K_R],	[p2_K_H],	[p2_A_K],	[p2_A_KA],	[p2_A_KW],
+	[p2_A_KR],	[p2_A_KH],	[p2_A_A],	[p2_A_AW],	[p2_A_AR],	[p2_A_AH],	[p2_A_W],	[p2_A_WR],
+	[p2_A_WH],	[p2_A_R],	[p2_A_RH],	[p2_A_H],	[p2_W_K],	[p2_W_A],	[p2_W_W],	[p2_W_R],
+	[p2_W_H],	[p2_R_K],	[p2_R_A],	[p2_R_W],	[p2_R_R],	[p2_R_H],	[p2_H_KK],	[p2_H_KA],
+	[p2_H_KW],	[p2_H_KR],	[p2_H_KH],	[p2_H_AK],	[p2_H_AA],	[p2_H_AW],	[p2_H_AR],	[p2_H_AH],
+	[p2_H_WK],	[p2_H_WA],	[p2_H_WW],	[p2_H_WR],	[p2_H_WH],	[p2_H_RK],	[p2_H_RA],	[p2_H_RW],
+	[p2_H_RR],	[p2_H_RH],	[p2_H_HK],	[p2_H_HA],	[p2_H_HW],	[p2_H_HR],	[p2_H_HH],	[choose_KAW],
+	[choose_KAR],	[choose_KAH],	[choose_KWR],	[choose_KWH],	[choose_KRH], [choose_AWR],	[choose_AWH],
+	[choose_ARH], [choose_WRH], [p2_skip]
+endplayer
+
+player sys
+	[coin_flip], [K1_K2], [K1_A2], [K1_W2], [K1_R2], [K1_H2], [K2_K1], [K2_A1], [K2_W1], [K2_R1], [K2_H1],
+	[A1_K2], [A1_K2A2], [A1_K2W2], [A1_K2R2], [A1_K2H2], [A1_A2], [A1_A2W2], [A1_A2R2], [A1_A2H2], [A1_W2], [A1_W2R2], [A1_W2H2], [A1_R2], [A1_R2H2], [A1_H2],
+	[A2_K1], [A2_K1A1], [A2_K1W1], [A2_K1R1], [A2_K1H1], [A2_A1], [A2_A1W1], [A2_A1R1], [A2_A1H1], [A2_W1], [A2_W1R1], [A2_W1H1], [A2_R1], [A2_R1H1], [A2_H1],
+	[W1_K2], [W1_A2], [W1_W2], [W1_R2], [W1_H2], [W2_K1], [W2_A1], [W2_W1], [W2_R1], [W2_H1],
+	[R1_K2], [R1_A2], [R1_W2], [R1_R2], [R1_H2], [R2_K1], [R2_A1], [R2_W1], [R2_R1], [R2_H1],
+	[H1_K2K1], [H1_K2A1], [H1_K2W1], [H1_K2R1], [H1_K2H1], [H1_A2K1], [H1_A2A1], [H1_A2W1], [H1_A2R1], [H1_A2H1], [H1_W2K1], [H1_W2A1], [H1_W2W1], [H1_W2R1], [H1_W2H1],
+	[H1_R2K1], [H1_R2A1], [H1_R2W1], [H1_R2R1], [H1_R2H1], [H1_H2K1], [H1_H2A1], [H1_H2W1], [H1_H2R1], [H1_H2H1],
+	[H2_K1K2], [H2_K1A2], [H2_K1W2], [H2_K1R2], [H2_K1H2], [H2_A1K2], [H2_A1A2], [H2_A1W2], [H2_A1R2], [H2_A1H2], [H2_W1K2], [H2_W1A2], [H2_W1W2], [H2_W1R2], [H2_W1H2],
+	[H2_R1K2], [H2_R1A2], [H2_R1W2], [H2_R1R2], [H2_R1H2], [H2_H1K2], [H2_H1A2], [H2_H1W2], [H2_H1R2], [H2_H1H2]
+endplayer
+
+
+module game
+	attack	: [0..110];
+	turn	: [0..2];

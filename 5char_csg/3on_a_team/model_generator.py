@@ -11,9 +11,9 @@ def run(file_prefix, configuration, meta_pair, i):
     chars = ["Knight","Archer","Wizard","Rogue","Healer"]
     trips = []
     for p in range(len(chars)):
-        for j in range(i+1,len(chars)):
+        for j in range(p+1,len(chars)):
             for k in range(j+1,len(chars)):
-                trips += [chars[p] + chars[j] + chars[k]]
+                trips += [chars[p][0] + chars[j][0] + chars[k][0]]
     for trip in trips:
         f = open(file_prefix + "/" + trip + "_vs_" + str(i-1) + ".prism", "w")
         f.write("// Author:\tWilliam Kavanagh, University of Glasgow\n")
