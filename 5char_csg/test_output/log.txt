@@ -2,12 +2,12 @@ PRISM-games
 ===========
 
 Version: 4.4.dev
-Date: Fri Aug 02 16:52:53 BST 2019
+Date: Mon Aug 05 16:58:25 BST 2019
 Hostname: wkav-B250M-D2V
 Memory limits: cudd=1g, java(heap)=5g
-Command line: prism-games test_output/AH_dominance_check.prism ../properties/smg.props -prop 1 -exportadvmdp test_output/tmp.tra -exportstates test_output/tmp.sta -javamaxmem 5g -nopre -maxiters 300000
+Command line: prism-games test_output/RH_dominance_check.prism ../properties/smg.props -prop 1 -exportadvmdp test_output/tmp.tra -exportstates test_output/tmp.sta -javamaxmem 5g -nopre -maxiters 300000
 
-Parsing model file "test_output/AH_dominance_check.prism"...
+Parsing model file "test_output/RH_dominance_check.prism"...
 
 Parsing properties file "../properties/smg.props"...
 
@@ -25,26 +25,6 @@ Switching to explicit engine, which supports SMGs...
 
 Building model...
 
-Computing reachable states... 144208 299848 431752 states
-Reachable states exploration and model construction done in 8.342 secs.
+Computing reachable states... 152785 161701 states
+Reachable states exploration and model construction done in 3.165 secs.
 Sorting reachable states list...
-
-Time for model construction: 8.853 seconds.
-
-Warning: Deadlocks detected and fixed in 740 states
-
-Type:        SMG
-States:      431752 (1 initial)
-Transitions: 1162772
-Choices:     744570
-Max/avg:     10/1.72
-
-Exporting list of reachable states in plain text format to file "test_output/tmp.sta"...
-
----------------------------------------------------------------------
-
-Model checking: <<p1>> Pmax=? [ F "p1_wins" ]
-
-Starting probabilistic reachability...
-target=78, yes=78, no=0, maybe=431674
-Starting value iteration (maxmin)...

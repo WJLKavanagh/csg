@@ -1,30 +1,30 @@
 // Author:	William Kavanagh, University of Glasgow
-// Created:	2019-08-02
+// Created:	2019-08-05
 // File:		CSG auto-generated model
 // Comment:	This file is a generator for a later strategy for KA
 smg
-// Configuration BETA:
-const int Knight_health = 10;
+// Configuration DELTA9_30:
+const int Knight_health = 9;
 const int Knight_damage = 4;
-const double Knight_accuracy = 0.6;
+const double Knight_accuracy = 0.32999999999999974;
 
 const int Archer_health = 7;
 const int Archer_damage = 2;
-const double Archer_accuracy = 0.85;
+const double Archer_accuracy = 0.6699999999999997;
 
 const int Wizard_health = 7;
-const int Wizard_damage = 2;
-const double Wizard_accuracy = 0.75;
+const int Wizard_damage = 3;
+const double Wizard_accuracy = 0.3999999999999997;
 
-const int Rogue_health = 7;
+const int Rogue_health = 6;
 const int Rogue_damage = 3;
-const int Rogue_execute = 5;
-const double Rogue_accuracy = 0.65;
+const int Rogue_execute = 6;
+const double Rogue_accuracy = 0.43999999999999984;
 
-const int Healer_health = 9;
+const int Healer_health = 7;
 const int Healer_damage = 2;
-const int Healer_heal = 1;
-const double Healer_accuracy = 0.7;
+const int Healer_heal = 2;
+const double Healer_accuracy = 0.4999999999999998;
 
 player p1
 	[p1_K_K],	[p1_K_A],	[p1_K_W],	[p1_K_R],	[p1_K_H],	[p1_A_K],	[p1_A_KA],	[p1_A_KW],

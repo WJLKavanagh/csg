@@ -24,7 +24,7 @@ for p1k_alive in [True, False]:
 empty = 0
 for s in possible_states:
     possible_actions = []
-    guard = "\t[p2]\tattack = 0 & turn = 2 & "
+    guard = "\t[p2]\tturn = 2 & "
     s_desc = ["p1K","p1A","p1W","p1R","p1H","p2K","p2A","p2W","p2R","p2H","p2_stun"]
     for i in range(11):
         if i < 10:

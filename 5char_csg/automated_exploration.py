@@ -24,25 +24,29 @@ def reconfigure(nerfs, buffs, file):
     # creates new file at file_<++>.txt with required changes
     # returns new file name if successful or 0 if unable to make change (e.g. lowering accuracy at 0.0)
     r_file = open(file,"r").readlines()
-    write_file_addr = file[:len("configurations/"+seed_conf)]
-    if file[len("configurations/"+seed_conf)] == ".":
-        write_file_addr += "_1.txt"
+    if seed_conf+".txt" in file:        # if first file..
+        write_file_addr = file[:-4] + "_1" + ".txt"
     else:
-        write_file_addr = write_file_addr + str(int(file[len("configurations/"+seed_conf)+1:])+1) + ".txt"
+        iteration = file.split("_")[-1].split(".txt")[0]
+        write_file_addr = file.split("_")[0] + "_" + str(int(iteration)+1) + ".txt"
     w_file = open(write_file_addr,"w")
-    for line in r_file:
-        for char in nerfs + buffs:
-            if full_name[char.upper()] + "_accuracy" in line:
-                amended_line = line.split("= ")[0]
-                if char in nerfs:
-                    if float(line.split("= ")[1][-1]) - delta <= "0.0": return(0)
-                    amended_line = amended_line + "= " + str(float(line.split("= ")[1][-1])-delta) + ";"
-                else:
-                    if float(line.split("= ")[1][-1]) + delta >= "1.0": return(0)
-                    amended_line = amended_line + "= " + str(float(line.split("= ")[1][-1])+delta) + ";"
+    for line in r_file:                                             # for every line in the configuration
+        if "_accuracy" in line:                                     # if the line deals with an accuracy value
+            char = line.split("_accuracy")[0].split(" ")[-1]
+            amended_line = line.split("= ")[0]
+            if char in nerfs:                             # check if it needs to be nerfed
+                if float(line.split("= ")[1][:-2]) - delta <= 0.0: return(0)
+                amended_line = amended_line + "= " + str(float(line.split("= ")[1][:-2])-delta) + ";\n"
                 w_file.write(amended_line)
-            else: w_file.write(line)
-    return(write_file_addr[len("configurations/"):].split(".txt")[0])
+            elif char in buffs:
+                if float(line.split("= ")[1][:-2]) + delta >= 1.0: return(0)
+                amended_line = amended_line + "= " + str(float(line.split("= ")[1][:-2])+delta) + ";\n"
+                w_file.write(amended_line)
+            else:
+                w_file.write(line)
+        else:
+            w_file.write(line)
+    return(write_file_addr)             # return the file name
 
 
 seed_conf = input("Seed conf: ")
@@ -50,23 +54,23 @@ upper_bound = float(input("acceptable upper bound: "))
 lower_bound = float(input("acceptable lower bound: "))
 delta = float(input("increment delta (0.01 recommended): "))
 output = input("output folder: ")
+file_string = "configurations/" + seed_conf + ".txt"
 full_name = {"K":"Knight","A":"Archer","W":"Wizard","R":"Rogue","H":"Healer"}
 nerf, buff = evaluate_results(search_for_dominance.run(seed_conf,output))
 while nerf != [0] or buff != [0]:
     char_to_buff = []
     char_to_nerf = []
-    for pair in buff:
-        if pair[0] not in char_to_nerf: char_to_nerf += [pair[0]]
-        if pair[1] not in char_to_nerf: char_to_nerf += [pair[1]]
     for pair in nerf:
-        if pair[0] not in char_to_nerf: char_to_buff += [pair[0]]
-        if pair[1] not in char_to_nerf: char_to_buff += [pair[1]]
-    file_string = "configurations/" + seed_conf + ".txt"
+        if full_name[pair[0]] not in char_to_nerf: char_to_nerf += [full_name[pair[0]]]
+        if full_name[pair[1]] not in char_to_nerf: char_to_nerf += [full_name[pair[1]]]
+    for pair in buff:
+        if full_name[pair[0]] not in char_to_nerf: char_to_buff += [full_name[pair[0]]]
+        if full_name[pair[1]] not in char_to_nerf: char_to_buff += [full_name[pair[1]]]
     next_attempt = reconfigure(char_to_nerf, char_to_buff, file_string)
-    seed_conf = next_attempt
+    file_string = next_attempt
     if next_attempt == 0:
         print("Unable to change further, exiting.")
         exit()
     print("Reconfiguration complete. Running again.")
-    nerf, buff = evaluate_results(search_for_dominance.run(next_attempt,output))
+    nerf, buff = evaluate_results(search_for_dominance.run(next_attempt[15:-4],output))
 print("Acceptable configuration identified.")
