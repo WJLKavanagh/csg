@@ -1,0 +1,497 @@
+// Author:	William Kavanagh, University of Glasgow
+// Created:	2019-08-05
+// File:		CSG auto-generated model
+// Comment:	This file is a generator for a later strategy for KA
+
+// Configuration DELTA9:
+
+smg
+const int Knight_health = 9;
+const int Knight_damage = 4;
+const double Knight_accuracy = 0.63;
+
+const int Archer_health = 7;
+const int Archer_damage = 2;
+const double Archer_accuracy = 0.97;
+
+const int Wizard_health = 7;
+const int Wizard_damage = 3;
+const double Wizard_accuracy = 0.7;
+
+const int Rogue_health = 6;
+const int Rogue_damage = 3;
+const int Rogue_execute = 6;
+const double Rogue_accuracy = 0.66;
+
+const int Healer_health = 7;
+const int Healer_damage = 2;
+const int Healer_heal = 2;
+const double Healer_accuracy = 0.8;
+
+player p1
+[p1_K_K], [p1_K_A], [p1_K_W], [p1_K_R], [p1_K_H], [p1_A_K], [p1_A_KA], [p1_A_KW], [p1_A_KR], [p1_A_KH], [p1_A_A], [p1_A_AW], [p1_A_AR], [p1_A_AH], [p1_A_W], [p1_A_WR], [p1_A_WH], [p1_A_R], [p1_A_RH], [p1_A_H], [p1_W_K], [p1_W_A], [p1_W_W], [p1_W_R], [p1_W_H], [p1_R_K], [p1_R_Ke], [p1_R_A], [p1_R_Ae], [p1_R_W], [p1_R_We], [p1_R_R], [p1_R_Re], [p1_R_H], [p1_R_He], [p1_H_KK], [p1_H_KA], [p1_H_KW], [p1_H_KR], [p1_H_KH], [p1_H_AK], [p1_H_AA], [p1_H_AW], [p1_H_AR], [p1_H_AH], [p1_H_WK], [p1_H_WA], [p1_H_WW], [p1_H_WR], [p1_H_WH], [p1_H_RK], [p1_H_RA], [p1_H_RW], [p1_H_RR], [p1_H_RH], [p1_H_HK], [p1_H_HA], [p1_H_HW], [p1_H_HR], [p1_H_HH], [p1_skip]
+endplayer
+
+player p2
+[choose_RH], [choose_WH], [choose_WR], [choose_AH], [choose_AR], [choose_AW], [choose_KH], [choose_KR], [choose_KW], [choose_KA], [p2_K_K], [p2_K_A], [p2_K_W], [p2_K_R], [p2_K_H], [p2_A_K], [p2_A_KA], [p2_A_KW], [p2_A_KR], [p2_A_KH], [p2_A_A], [p2_A_AW], [p2_A_AR], [p2_A_AH], [p2_A_W], [p2_A_WR], [p2_A_WH], [p2_A_R], [p2_A_RH], [p2_A_H], [p2_W_K], [p2_W_A], [p2_W_W], [p2_W_R], [p2_W_H], [p2_R_K], [p2_R_Ke], [p2_R_A], [p2_R_Ae], [p2_R_W], [p2_R_We], [p2_R_R], [p2_R_Re], [p2_R_H], [p2_R_He], [p2_H_KK], [p2_H_KA], [p2_H_KW], [p2_H_KR], [p2_H_KH], [p2_H_AK], [p2_H_AA], [p2_H_AW], [p2_H_AR], [p2_H_AH], [p2_H_WK], [p2_H_WA], [p2_H_WW], [p2_H_WR], [p2_H_WH], [p2_H_RK], [p2_H_RA], [p2_H_RW], [p2_H_RR], [p2_H_RH], [p2_H_HK], [p2_H_HA], [p2_H_HW], [p2_H_HR], [p2_H_HH], [p2_skip]
+endplayer
+
+player sys
+[coin_flip]
+endplayer
+
+module game
+	turn	: [0..2];
+	p1K	: [0..Knight_health]		init Knight_health; // P1 Knight
+	p1A	: [0..Archer_health]		init Archer_health; // P1 Archer
+	p1W	: [0..Wizard_health]		init 0; // P1 Wizard not used
+	p1R	: [0..Rogue_health]		init 0; // P1 Rogue not used
+	p1H	: [0..Healer_health]		init 0; // P1 Healer not used
+	p1_stun	: [0..5];				//0 - none, 1 - Knight stunned, 2 - Archer stunned, 3 - Wizard stunned .. etc
+	p2K	: [0..Knight_health]		init Knight_health; // P2 Knight
+	p2A	: [0..Archer_health]		init Archer_health; // P2 Archer
+	p2W	: [0..Wizard_health]		init Wizard_health; // P2 Wizard
+	p2R	: [0..Rogue_health]		init Rogue_health; // P2 Rogue
+	p2H	: [0..Healer_health]		init Healer_health; // P2 Healer
+	p2_stun	: [0..5];				//0 - none, 1 - Knight stunned, 2 - Archer stunned, 3 - Wizard stunned .. etc
+
+// Choose opposing material
+	[choose_KA] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2W' = 0) & (p2R' = 0) & (p2H' = 0);
+	[choose_KW] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2A' = 0) & (p2R' = 0) & (p2H' = 0);
+	[choose_KR] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2A' = 0) & (p2W' = 0) & (p2H' = 0);
+	[choose_KH] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2A' = 0) & (p2W' = 0) & (p2R' = 0);
+	[choose_AW] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2K' = 0) & (p2R' = 0) & (p2H' = 0);
+	[choose_AR] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2K' = 0) & (p2W' = 0) & (p2H' = 0);
+	[choose_AH] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2K' = 0) & (p2W' = 0) & (p2R' = 0);
+	[choose_WR] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2K' = 0) & (p2A' = 0) & (p2H' = 0);
+	[choose_WH] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2K' = 0) & (p2A' = 0) & (p2R' = 0);
+	[choose_RH] p2K > 0 & p2A > 0 & p2W > 0 & p2R > 0 & p2H > 0 ->
+		(p2K' = 0) & (p2A' = 0) & (p2W' = 0);
+
+//who goes first (deterministic)
+	[coin_flip] turn = 0 & p2K*p2A*p2W*p2R*p2H = 0 ->
+		0.5 : (turn' = 1) + 0.5 : (turn' = 2);
+
+// Actions for p1
+	[p1_K_K] turn = 1 & p1K > 0 & p1_stun != 1 & p2K > 0 ->
+		Knight_accuracy : (p2K' = max(0, p2K - Knight_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_K_A] turn = 1 & p1K > 0 & p1_stun != 1 & p2A > 0 ->
+		Knight_accuracy : (p2A' = max(0, p2A - Knight_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_K_W] turn = 1 & p1K > 0 & p1_stun != 1 & p2W > 0 ->
+		Knight_accuracy : (p2W' = max(0, p2W - Knight_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_K_R] turn = 1 & p1K > 0 & p1_stun != 1 & p2R > 0 ->
+		Knight_accuracy : (p2R' = max(0, p2R - Knight_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_K_H] turn = 1 & p1K > 0 & p1_stun != 1 & p2H > 0 ->
+		Knight_accuracy : (p2H' = max(0, p2H - Knight_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_K] turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 ->
+		Archer_accuracy : (p2K' = max(0, p2K - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_KA] turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2A > 0 ->
+		pow(Archer_accuracy,2) : (p2K' = max(0, p2K - Archer_damage)) & (p2A' = max(0, p2A - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2K' = max(0, p2K - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2A' = max(0, p2A - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_KW] turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2W > 0 ->
+		pow(Archer_accuracy,2) : (p2K' = max(0, p2K - Archer_damage)) & (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2K' = max(0, p2K - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_KR] turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2R > 0 ->
+		pow(Archer_accuracy,2) : (p2K' = max(0, p2K - Archer_damage)) & (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2K' = max(0, p2K - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_KH] turn = 1 & p1A > 0 & p1_stun != 2 & p2K > 0 & p2H > 0 ->
+		pow(Archer_accuracy,2) : (p2K' = max(0, p2K - Archer_damage)) & (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2K' = max(0, p2K - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_A] turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 ->
+		Archer_accuracy : (p2A' = max(0, p2A - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_AW] turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 & p2W > 0 ->
+		pow(Archer_accuracy,2) : (p2A' = max(0, p2A - Archer_damage)) & (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2A' = max(0, p2A - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_AR] turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 & p2R > 0 ->
+		pow(Archer_accuracy,2) : (p2A' = max(0, p2A - Archer_damage)) & (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2A' = max(0, p2A - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_AH] turn = 1 & p1A > 0 & p1_stun != 2 & p2A > 0 & p2H > 0 ->
+		pow(Archer_accuracy,2) : (p2A' = max(0, p2A - Archer_damage)) & (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2A' = max(0, p2A - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_W] turn = 1 & p1A > 0 & p1_stun != 2 & p2W > 0 ->
+		Archer_accuracy : (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_WR] turn = 1 & p1A > 0 & p1_stun != 2 & p2W > 0 & p2R > 0 ->
+		pow(Archer_accuracy,2) : (p2W' = max(0, p2W - Archer_damage)) & (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_WH] turn = 1 & p1A > 0 & p1_stun != 2 & p2W > 0 & p2H > 0 ->
+		pow(Archer_accuracy,2) : (p2W' = max(0, p2W - Archer_damage)) & (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2W' = max(0, p2W - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_R] turn = 1 & p1A > 0 & p1_stun != 2 & p2R > 0 ->
+		Archer_accuracy : (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_RH] turn = 1 & p1A > 0 & p1_stun != 2 & p2R > 0 & p2H > 0 ->
+		pow(Archer_accuracy,2) : (p2R' = max(0, p2R - Archer_damage)) & (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2R' = max(0, p2R - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 2) & (p1_stun' = 0);
+	[p1_A_H] turn = 1 & p1A > 0 & p1_stun != 2 & p2H > 0 ->
+		Archer_accuracy : (p2H' = max(0, p2H - Archer_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_W_K] turn = 1 & p1W > 0 & p1_stun != 3 & p2K > 0 ->
+		Wizard_accuracy : (p2K' = max(0, p2K - Wizard_damage)) & (p2_stun' = 1) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_W_A] turn = 1 & p1W > 0 & p1_stun != 3 & p2A > 0 ->
+		Wizard_accuracy : (p2A' = max(0, p2A - Wizard_damage)) & (p2_stun' = 2) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_W_W] turn = 1 & p1W > 0 & p1_stun != 3 & p2W > 0 ->
+		Wizard_accuracy : (p2W' = max(0, p2W - Wizard_damage)) & (p2_stun' = 3) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_W_R] turn = 1 & p1W > 0 & p1_stun != 3 & p2R > 0 ->
+		Wizard_accuracy : (p2R' = max(0, p2R - Wizard_damage)) & (p2_stun' = 4) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_W_H] turn = 1 & p1W > 0 & p1_stun != 3 & p2H > 0 ->
+		Wizard_accuracy : (p2H' = max(0, p2H - Wizard_damage)) & (p2_stun' = 5) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_K] turn = 1 & p1R > 0 & p1_stun != 4 & p2K > Rogue_execute ->
+		Rogue_accuracy : (p2K' = max(0, p2K - Rogue_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_Ke] turn = 1 & p1R > 0 & p1_stun != 4 & p2K <= Rogue_execute ->
+		Rogue_accuracy : (p2K' = 0) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_A] turn = 1 & p1R > 0 & p1_stun != 4 & p2A > Rogue_execute ->
+		Rogue_accuracy : (p2A' = max(0, p2A - Rogue_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_Ae] turn = 1 & p1R > 0 & p1_stun != 4 & p2A <= Rogue_execute ->
+		Rogue_accuracy : (p2A' = 0) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_W] turn = 1 & p1R > 0 & p1_stun != 4 & p2W > Rogue_execute ->
+		Rogue_accuracy : (p2W' = max(0, p2W - Rogue_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_We] turn = 1 & p1R > 0 & p1_stun != 4 & p2W <= Rogue_execute ->
+		Rogue_accuracy : (p2W' = 0) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_R] turn = 1 & p1R > 0 & p1_stun != 4 & p2R > Rogue_execute ->
+		Rogue_accuracy : (p2R' = max(0, p2R - Rogue_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_Re] turn = 1 & p1R > 0 & p1_stun != 4 & p2R <= Rogue_execute ->
+		Rogue_accuracy : (p2R' = 0) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_H] turn = 1 & p1R > 0 & p1_stun != 4 & p2H > Rogue_execute ->
+		Rogue_accuracy : (p2H' = max(0, p2H - Rogue_damage)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_R_He] turn = 1 & p1R > 0 & p1_stun != 4 & p2H <= Rogue_execute ->
+		Rogue_accuracy : (p2H' = 0) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_KK] turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1K > 0 ->
+		Healer_accuracy : (p2K' = max(0, p2K - Healer_damage)) & (p1K' = min(Knight_health, p1K + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_KA] turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1A > 0 ->
+		Healer_accuracy : (p2K' = max(0, p2K - Healer_damage)) & (p1A' = min(Archer_health, p1A + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_KW] turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1W > 0 ->
+		Healer_accuracy : (p2K' = max(0, p2K - Healer_damage)) & (p1W' = min(Wizard_health, p1W + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_KR] turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 & p1R > 0 ->
+		Healer_accuracy : (p2K' = max(0, p2K - Healer_damage)) & (p1R' = min(Rogue_health, p1R + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_KH] turn = 1 & p1H > 0 & p1_stun != 5 & p2K > 0 ->
+		Healer_accuracy : (p2K' = max(0, p2K - Healer_damage)) & (p1H' = min(Healer_health, p1H + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_AK] turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1K > 0 ->
+		Healer_accuracy : (p2A' = max(0, p2A - Healer_damage)) & (p1K' = min(Knight_health, p1K + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_AA] turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1A > 0 ->
+		Healer_accuracy : (p2A' = max(0, p2A - Healer_damage)) & (p1A' = min(Archer_health, p1A + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_AW] turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1W > 0 ->
+		Healer_accuracy : (p2A' = max(0, p2A - Healer_damage)) & (p1W' = min(Wizard_health, p1W + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_AR] turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 & p1R > 0 ->
+		Healer_accuracy : (p2A' = max(0, p2A - Healer_damage)) & (p1R' = min(Rogue_health, p1R + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_AH] turn = 1 & p1H > 0 & p1_stun != 5 & p2A > 0 ->
+		Healer_accuracy : (p2A' = max(0, p2A - Healer_damage)) & (p1H' = min(Healer_health, p1H + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_WK] turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1K > 0 ->
+		Healer_accuracy : (p2W' = max(0, p2W - Healer_damage)) & (p1K' = min(Knight_health, p1K + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_WA] turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1A > 0 ->
+		Healer_accuracy : (p2W' = max(0, p2W - Healer_damage)) & (p1A' = min(Archer_health, p1A + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_WW] turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1W > 0 ->
+		Healer_accuracy : (p2W' = max(0, p2W - Healer_damage)) & (p1W' = min(Wizard_health, p1W + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_WR] turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 & p1R > 0 ->
+		Healer_accuracy : (p2W' = max(0, p2W - Healer_damage)) & (p1R' = min(Rogue_health, p1R + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_WH] turn = 1 & p1H > 0 & p1_stun != 5 & p2W > 0 ->
+		Healer_accuracy : (p2W' = max(0, p2W - Healer_damage)) & (p1H' = min(Healer_health, p1H + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_RK] turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1K > 0 ->
+		Healer_accuracy : (p2R' = max(0, p2R - Healer_damage)) & (p1K' = min(Knight_health, p1K + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_RA] turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1A > 0 ->
+		Healer_accuracy : (p2R' = max(0, p2R - Healer_damage)) & (p1A' = min(Archer_health, p1A + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_RW] turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1W > 0 ->
+		Healer_accuracy : (p2R' = max(0, p2R - Healer_damage)) & (p1W' = min(Wizard_health, p1W + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_RR] turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 & p1R > 0 ->
+		Healer_accuracy : (p2R' = max(0, p2R - Healer_damage)) & (p1R' = min(Rogue_health, p1R + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_RH] turn = 1 & p1H > 0 & p1_stun != 5 & p2R > 0 ->
+		Healer_accuracy : (p2R' = max(0, p2R - Healer_damage)) & (p1H' = min(Healer_health, p1H + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_HK] turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1K > 0 ->
+		Healer_accuracy : (p2H' = max(0, p2H - Healer_damage)) & (p1K' = min(Knight_health, p1K + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_HA] turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1A > 0 ->
+		Healer_accuracy : (p2H' = max(0, p2H - Healer_damage)) & (p1A' = min(Archer_health, p1A + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_HW] turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1W > 0 ->
+		Healer_accuracy : (p2H' = max(0, p2H - Healer_damage)) & (p1W' = min(Wizard_health, p1W + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_HR] turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 & p1R > 0 ->
+		Healer_accuracy : (p2H' = max(0, p2H - Healer_damage)) & (p1R' = min(Rogue_health, p1R + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_H_HH] turn = 1 & p1H > 0 & p1_stun != 5 & p2H > 0 ->
+		Healer_accuracy : (p2H' = max(0, p2H - Healer_damage)) & (p1H' = min(Healer_health, p1H + Healer_heal)) & (turn' = 2) & (p1_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 2) & (p1_stun' = 0);
+	[p1_skip] turn = 1 ->
+		(turn' = 2) & (p1_stun' = 0);
+
+// Actions for p2
+	[p2_K_K] turn = 2 & p2K > 0 & p2_stun != 1 & p1K > 0 ->
+		Knight_accuracy : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_K_A] turn = 2 & p2K > 0 & p2_stun != 1 & p1A > 0 ->
+		Knight_accuracy : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_K_W] turn = 2 & p2K > 0 & p2_stun != 1 & p1W > 0 ->
+		Knight_accuracy : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_K_R] turn = 2 & p2K > 0 & p2_stun != 1 & p1R > 0 ->
+		Knight_accuracy : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_K_H] turn = 2 & p2K > 0 & p2_stun != 1 & p1H > 0 ->
+		Knight_accuracy : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Knight_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_K] turn = 2 & p2A > 0 & p2_stun != 2 & p1K > 0 ->
+		Archer_accuracy : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_KA] turn = 2 & p2A > 0 & p2_stun != 2 & p1K > 0 & p1A > 0 ->
+		pow(Archer_accuracy,2) : (p1K' = max(0, p1K - Archer_damage)) & (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_KW] turn = 2 & p2A > 0 & p2_stun != 2 & p1K > 0 & p1W > 0 ->
+		pow(Archer_accuracy,2) : (p1K' = max(0, p1K - Archer_damage)) & (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_KR] turn = 2 & p2A > 0 & p2_stun != 2 & p1K > 0 & p1R > 0 ->
+		pow(Archer_accuracy,2) : (p1K' = max(0, p1K - Archer_damage)) & (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_KH] turn = 2 & p2A > 0 & p2_stun != 2 & p1K > 0 & p1H > 0 ->
+		pow(Archer_accuracy,2) : (p1K' = max(0, p1K - Archer_damage)) & (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_A] turn = 2 & p2A > 0 & p2_stun != 2 & p1A > 0 ->
+		Archer_accuracy : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_AW] turn = 2 & p2A > 0 & p2_stun != 2 & p1A > 0 & p1W > 0 ->
+		pow(Archer_accuracy,2) : (p1A' = max(0, p1A - Archer_damage)) & (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_AR] turn = 2 & p2A > 0 & p2_stun != 2 & p1A > 0 & p1R > 0 ->
+		pow(Archer_accuracy,2) : (p1A' = max(0, p1A - Archer_damage)) & (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_AH] turn = 2 & p2A > 0 & p2_stun != 2 & p1A > 0 & p1H > 0 ->
+		pow(Archer_accuracy,2) : (p1A' = max(0, p1A - Archer_damage)) & (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_W] turn = 2 & p2A > 0 & p2_stun != 2 & p1W > 0 ->
+		Archer_accuracy : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_WR] turn = 2 & p2A > 0 & p2_stun != 2 & p1W > 0 & p1R > 0 ->
+		pow(Archer_accuracy,2) : (p1W' = max(0, p1W - Archer_damage)) & (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_WH] turn = 2 & p2A > 0 & p2_stun != 2 & p1W > 0 & p1H > 0 ->
+		pow(Archer_accuracy,2) : (p1W' = max(0, p1W - Archer_damage)) & (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_R] turn = 2 & p2A > 0 & p2_stun != 2 & p1R > 0 ->
+		Archer_accuracy : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_RH] turn = 2 & p2A > 0 & p2_stun != 2 & p1R > 0 & p1H > 0 ->
+		pow(Archer_accuracy,2) : (p1R' = max(0, p1R - Archer_damage)) & (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		Archer_accuracy * (1 - Archer_accuracy) : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		pow( (1 - Archer_accuracy),2) : (turn' = 1) & (p2_stun' = 0);
+	[p2_A_H] turn = 2 & p2A > 0 & p2_stun != 2 & p1H > 0 ->
+		Archer_accuracy : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Archer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_W_K] turn = 2 & p2W > 0 & p2_stun != 3 & p1K > 0 ->
+		Wizard_accuracy : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_W_A] turn = 2 & p2W > 0 & p2_stun != 3 & p1A > 0 ->
+		Wizard_accuracy : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_W_W] turn = 2 & p2W > 0 & p2_stun != 3 & p1W > 0 ->
+		Wizard_accuracy : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_W_R] turn = 2 & p2W > 0 & p2_stun != 3 & p1R > 0 ->
+		Wizard_accuracy : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_W_H] turn = 2 & p2W > 0 & p2_stun != 3 & p1H > 0 ->
+		Wizard_accuracy : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Wizard_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_K] turn = 2 & p2R > 0 & p2_stun != 4 & p1K > Rogue_execute ->
+		Rogue_accuracy : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_Ke] turn = 2 & p2R > 0 & p2_stun != 4 & p1K <= Rogue_execute ->
+		Rogue_accuracy : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_A] turn = 2 & p2R > 0 & p2_stun != 4 & p1A > Rogue_execute ->
+		Rogue_accuracy : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_Ae] turn = 2 & p2R > 0 & p2_stun != 4 & p1A <= Rogue_execute ->
+		Rogue_accuracy : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_W] turn = 2 & p2R > 0 & p2_stun != 4 & p1W > Rogue_execute ->
+		Rogue_accuracy : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_We] turn = 2 & p2R > 0 & p2_stun != 4 & p1W <= Rogue_execute ->
+		Rogue_accuracy : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_R] turn = 2 & p2R > 0 & p2_stun != 4 & p1R > Rogue_execute ->
+		Rogue_accuracy : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_Re] turn = 2 & p2R > 0 & p2_stun != 4 & p1R <= Rogue_execute ->
+		Rogue_accuracy : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_H] turn = 2 & p2R > 0 & p2_stun != 4 & p1H > Rogue_execute ->
+		Rogue_accuracy : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_R_He] turn = 2 & p2R > 0 & p2_stun != 4 & p1H <= Rogue_execute ->
+		Rogue_accuracy : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Rogue_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_KK] turn = 2 & p2H > 0 & p2_stun != 5 & p1K > 0 & p2K > 0 ->
+		Healer_accuracy : (p1K' = max(0, p1K - Healer_damage)) & (p2K' = min(Knight_health, p2K + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_KA] turn = 2 & p2H > 0 & p2_stun != 5 & p1K > 0 & p2A > 0 ->
+		Healer_accuracy : (p1K' = max(0, p1K - Healer_damage)) & (p2A' = min(Archer_health, p2A + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_KW] turn = 2 & p2H > 0 & p2_stun != 5 & p1K > 0 & p2W > 0 ->
+		Healer_accuracy : (p1K' = max(0, p1K - Healer_damage)) & (p2W' = min(Wizard_health, p2W + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_KR] turn = 2 & p2H > 0 & p2_stun != 5 & p1K > 0 & p2R > 0 ->
+		Healer_accuracy : (p1K' = max(0, p1K - Healer_damage)) & (p2R' = min(Rogue_health, p2R + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_KH] turn = 2 & p2H > 0 & p2_stun != 5 & p1K > 0 ->
+		Healer_accuracy : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_AK] turn = 2 & p2H > 0 & p2_stun != 5 & p1A > 0 & p2K > 0 ->
+		Healer_accuracy : (p1A' = max(0, p1A - Healer_damage)) & (p2K' = min(Knight_health, p2K + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_AA] turn = 2 & p2H > 0 & p2_stun != 5 & p1A > 0 & p2A > 0 ->
+		Healer_accuracy : (p1A' = max(0, p1A - Healer_damage)) & (p2A' = min(Archer_health, p2A + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_AW] turn = 2 & p2H > 0 & p2_stun != 5 & p1A > 0 & p2W > 0 ->
+		Healer_accuracy : (p1A' = max(0, p1A - Healer_damage)) & (p2W' = min(Wizard_health, p2W + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_AR] turn = 2 & p2H > 0 & p2_stun != 5 & p1A > 0 & p2R > 0 ->
+		Healer_accuracy : (p1A' = max(0, p1A - Healer_damage)) & (p2R' = min(Rogue_health, p2R + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_AH] turn = 2 & p2H > 0 & p2_stun != 5 & p1A > 0 ->
+		Healer_accuracy : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_WK] turn = 2 & p2H > 0 & p2_stun != 5 & p1W > 0 & p2K > 0 ->
+		Healer_accuracy : (p1W' = max(0, p1W - Healer_damage)) & (p2K' = min(Knight_health, p2K + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_WA] turn = 2 & p2H > 0 & p2_stun != 5 & p1W > 0 & p2A > 0 ->
+		Healer_accuracy : (p1W' = max(0, p1W - Healer_damage)) & (p2A' = min(Archer_health, p2A + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_WW] turn = 2 & p2H > 0 & p2_stun != 5 & p1W > 0 & p2W > 0 ->
+		Healer_accuracy : (p1W' = max(0, p1W - Healer_damage)) & (p2W' = min(Wizard_health, p2W + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_WR] turn = 2 & p2H > 0 & p2_stun != 5 & p1W > 0 & p2R > 0 ->
+		Healer_accuracy : (p1W' = max(0, p1W - Healer_damage)) & (p2R' = min(Rogue_health, p2R + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_WH] turn = 2 & p2H > 0 & p2_stun != 5 & p1W > 0 ->
+		Healer_accuracy : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_RK] turn = 2 & p2H > 0 & p2_stun != 5 & p1R > 0 & p2K > 0 ->
+		Healer_accuracy : (p1R' = max(0, p1R - Healer_damage)) & (p2K' = min(Knight_health, p2K + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_RA] turn = 2 & p2H > 0 & p2_stun != 5 & p1R > 0 & p2A > 0 ->
+		Healer_accuracy : (p1R' = max(0, p1R - Healer_damage)) & (p2A' = min(Archer_health, p2A + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_RW] turn = 2 & p2H > 0 & p2_stun != 5 & p1R > 0 & p2W > 0 ->
+		Healer_accuracy : (p1R' = max(0, p1R - Healer_damage)) & (p2W' = min(Wizard_health, p2W + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_RR] turn = 2 & p2H > 0 & p2_stun != 5 & p1R > 0 & p2R > 0 ->
+		Healer_accuracy : (p1R' = max(0, p1R - Healer_damage)) & (p2R' = min(Rogue_health, p2R + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_RH] turn = 2 & p2H > 0 & p2_stun != 5 & p1R > 0 ->
+		Healer_accuracy : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_HK] turn = 2 & p2H > 0 & p2_stun != 5 & p1H > 0 & p2K > 0 ->
+		Healer_accuracy : (p1H' = max(0, p1H - Healer_damage)) & (p2K' = min(Knight_health, p2K + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_HA] turn = 2 & p2H > 0 & p2_stun != 5 & p1H > 0 & p2A > 0 ->
+		Healer_accuracy : (p1H' = max(0, p1H - Healer_damage)) & (p2A' = min(Archer_health, p2A + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_HW] turn = 2 & p2H > 0 & p2_stun != 5 & p1H > 0 & p2W > 0 ->
+		Healer_accuracy : (p1H' = max(0, p1H - Healer_damage)) & (p2W' = min(Wizard_health, p2W + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_HR] turn = 2 & p2H > 0 & p2_stun != 5 & p1H > 0 & p2R > 0 ->
+		Healer_accuracy : (p1H' = max(0, p1H - Healer_damage)) & (p2R' = min(Rogue_health, p2R + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_H_HH] turn = 2 & p2H > 0 & p2_stun != 5 & p1H > 0 ->
+		Healer_accuracy : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		1 - Healer_accuracy : (turn' = 1) & (p2_stun' = 0);
+	[p2_skip] turn = 2 ->
+		(turn' = 1) & (p2_stun' = 0);
+
+endmodule
+
+formula p1_sum = p1K+p1A+p1W+p1R+p1H;
+formula p2_sum = p2K+p2A+p2W+p2R+p2H;
+label "p1_wins" = p1_sum > 0 & p2_sum = 0;
+label "p2_wins" = p1_sum = 0 & p2_sum > 0;

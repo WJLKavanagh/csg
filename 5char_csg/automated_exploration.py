@@ -3,7 +3,7 @@
 # Run search for dominance repeatedly using a seed configuration..
 # Create a new configuration which nerfs and pairs with an optimal probability of over 0.4
 
-import search_for_dominance
+import assess_optimalities
 
 def evaluate_results(res):
     # Takes result dictionary and determines if the configuration is suitable.
@@ -56,7 +56,7 @@ delta = float(input("increment delta (0.01 recommended): "))
 output = input("output folder: ")
 file_string = "configurations/" + seed_conf + ".txt"
 full_name = {"K":"Knight","A":"Archer","W":"Wizard","R":"Rogue","H":"Healer"}
-nerf, buff = evaluate_results(search_for_dominance.run(seed_conf,output))
+nerf, buff = evaluate_results(assess_optimalities.run(seed_conf))
 while nerf != [0] or buff != [0]:
     char_to_buff = []
     char_to_nerf = []
@@ -72,5 +72,5 @@ while nerf != [0] or buff != [0]:
         print("Unable to change further, exiting.")
         exit()
     print("Reconfiguration complete. Running again.")
-    nerf, buff = evaluate_results(search_for_dominance.run(next_attempt[15:-4],output))
+    nerf, buff = evaluate_results(assess_optimalities.run(next_attempt[15:-4]))
 print("Acceptable configuration identified.")
