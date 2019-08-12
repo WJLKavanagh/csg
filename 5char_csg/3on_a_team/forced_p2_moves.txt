@@ -1,615 +1,1641 @@
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 56) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 61) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 76) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 81) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
-		1/1 : (attack' = 90) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
-		1/1 : (attack' = 90) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
-		1/1 : (attack' = 90) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
-		1/1 : (attack' = 90) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K > 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
-		1/1 : (attack' = 90) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 57) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 66) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 77) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 82) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
-		1/1 : (attack' = 95) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
-		1/1 : (attack' = 95) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
-		1/1 : (attack' = 95) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
-		1/1 : (attack' = 95) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A > 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
-		1/1 : (attack' = 95) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 58) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 70) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 78) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 83) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
-		1/1 : (attack' = 100) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
-		1/1 : (attack' = 100) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
-		1/1 : (attack' = 100) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
-		1/1 : (attack' = 100) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W > 0 & p1R = 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
-		1/1 : (attack' = 100) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 59) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 73) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 79) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 84) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
-		1/1 : (attack' = 105) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
-		1/1 : (attack' = 105) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
-		1/1 : (attack' = 105) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
-		1/1 : (attack' = 105) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1H = 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
-		1/1 : (attack' = 105) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 60) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 75) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 80) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
-		1/1 : (attack' = 85) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
-		1/1 : (attack' = 110) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
-		1/1 : (attack' = 110) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
-		1/1 : (attack' = 110) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
-		1/1 : (attack' = 110) & (p2_stun' = 0);
-	[p2]	attack = 0 & turn = 2 & p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & 
-		p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
-		1/1 : (attack' = 110) & (p2_stun' = 0);
+// player 2 - forced moves
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1H' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > 0 & p1H <= Rogue_execute & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1H' = max(0, p1H - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1H' = max(0, p1H - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1H' = max(0, p1H - Wizard_damage)) & (p1_stun' = 5) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1H' = max(0, p1H - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R = 0 & p1H > Rogue_execute & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1H' = max(0, p1H - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1R' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > 0 & p1R <= Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1R' = max(0, p1R - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1R' = max(0, p1R - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1R' = max(0, p1R - Wizard_damage)) & (p1_stun' = 4) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1R' = max(0, p1R - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W = 0 & p1R > Rogue_execute & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1R' = max(0, p1R - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1W' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > 0 & p1W <= Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1W' = max(0, p1W - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1W' = max(0, p1W - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1W' = max(0, p1W - Wizard_damage)) & (p1_stun' = 3) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1W' = max(0, p1W - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A = 0 & p1W > Rogue_execute & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1W' = max(0, p1W - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1A' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > 0 & p1A <= Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1A' = max(0, p1A - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1A' = max(0, p1A - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1A' = max(0, p1A - Wizard_damage)) & (p1_stun' = 2) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1A' = max(0, p1A - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K = 0 & p1A > Rogue_execute & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1A' = max(0, p1A - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1K' = 0) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > 0 & p1K <= Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 0 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 1 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 2 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 3 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 4 ->
+		(Healer_accuracy)/1 : (p1K' = max(0, p1K - Healer_damage)) & (p2H' = min(Healer_health, p2H + Healer_heal)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Healer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 0 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H > 0 & p2_stun = 5 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 3 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A = 0 & p2W > 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 2 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K = 0 & p2A > 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 0 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R = 0 & p2H > 0 & p2_stun = 5 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 1 ->
+		(Rogue_accuracy)/1 : (p1K' = max(0, p1K - Rogue_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Rogue_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W = 0 & p2R > 0 & p2H = 0 & p2_stun = 4 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Wizard_accuracy)/1 : (p1K' = max(0, p1K - Wizard_damage)) & (p1_stun' = 1) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Wizard_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A = 0 & p2W > 0 & p2R = 0 & p2H = 0 & p2_stun = 3 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 1 ->
+		(Archer_accuracy)/1 : (p1K' = max(0, p1K - Archer_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Archer_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);
+	[p2] p1K > Rogue_execute & p1A = 0 & p1W = 0 & p1R = 0 & p1H = 0 & 
+	  p2K > 0 & p2A > 0 & p2W = 0 & p2R = 0 & p2H = 0 & p2_stun = 2 ->
+		(Knight_accuracy)/1 : (p1K' = max(0, p1K - Knight_damage)) & (turn' = 1) & (p2_stun' = 0) + 
+		(1 - Knight_accuracy)/1 : (turn' = 1) & (p2_stun' = 0);

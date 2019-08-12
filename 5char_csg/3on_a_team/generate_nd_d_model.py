@@ -133,4 +133,4 @@ def run(p1_team, configuration, file_to_write):
     f.write('label "p2_wins" = p1_sum = 0 & p2_sum > 0;' + "\n")
     f.close()
 
-run("KAW","delta9","mdp_test.prism")
+#run("KAW","delta9","mdp_test.prism")

@@ -76,7 +76,7 @@ def do_command(guard):
             action += "\t\t(pow( (1 - Archer_accuracy),2))/" + str(len(available_actions)) + " : " + result
             if available_actions.index(act) == len(available_actions) - 1: action += ";"
             else: action += "+"
-        f.write(action + "\n")
+        zf.write(action + "\n")
 
 def run(file):
     # writes full naive, deterministic strategy for p2 to <file>

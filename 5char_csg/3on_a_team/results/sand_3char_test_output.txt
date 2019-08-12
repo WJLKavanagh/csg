@@ -1,0 +1,55 @@
+wkav@sand:[~/docs/phd/2019/csg/5char_csg/3on_a_team]: /usr/local/prism-games-2.0.beta3-linux64/bin/prism test.prism -javamaxmem 600g ../../properties/smg.props -prop 1 -nopre
+PRISM-games
+===========
+
+Version: 2.0.beta3
+Date: Tue Aug 06 14:51:46 BST 2019
+Hostname: sand
+Memory limits: cudd=1g, java(heap)=533.3g
+Command line: prism test.prism -javamaxmem 600g ../../properties/smg.props -prop 1 -nopre
+
+Parsing model file "test.prism"...
+
+Parsing properties file "../../properties/smg.props"...
+
+4 properties:
+(1) <<p1>> Pmax=? [ F "p1_wins" ]
+(2) <<p2>> Pmax=? [ F "p2_wins" ]
+(3) <<p1>> Pmax=? [ F "p1_wins" ]+<<p2>> Pmax=? [ F "p2_wins" ]
+(4) Pmax=? [ F "deadlock"&!"p1_wins"&!"p2_wins" ]
+
+Type:        SMG
+Modules:     game
+Variables:   turn p1K p1A p1W p1R p1H p1_stun p2K p2A p2W p2R p2H p2_stun
+
+Switching to explicit engine, which supports SMGs...
+
+---------------------------------------------------------------------
+
+Model checking: <<p1>> Pmax=? [ F "p1_wins" ]
+
+Building model...
+
+Computing reachable states... 48282 102369 150354 200589 252540 305132 363320 426677 472405 536317 594669 626102 683520 744196 784718 836654 888974 933816 1001433 1076201 1129886 1183698 1252011 1305014 1353625 1414071 1468081 1528542 1574644 1632831 1687763 1754567 1800829 1857220 1923759 1985035 2031031 2100297 2165159 2232321 2269298 2335284 2408121 2470607 2525845 2563903 2621448 2679160 2734348 2794565 2860987 2929297 2991967 3038209 3057380 3106538 3163184 3212311 3261668 3296307 3351660 3406521 3475383 3564265 3607451 3677264 3749268 3815215 3881177 3908897 3988966 4055336 4112999 4173757 4210482 4288436 4351866 4429505 4501234 4525326 4590796 4663629 4733490 4811270 4852941 4927400 5005589 5076126 5125099 5189156 5253756 5315593 5384090 5415203 5482565 5539099 5596513 5649607 5652548 5709083 5766427 5835191 5914854 6002162 6087849 6181568 6203443 6290082 6366980 6434137 6450053 6511723 6571945 6669551 6689857 6713839 states
+Reachable states exploration and model construction done in 411.375 secs.
+Sorting reachable states list...
+
+Time for model construction: 785.475 seconds.
+
+Type:        SMG
+States:      6713839 (1 initial)
+Transitions: 147593298
+Choices:     69700104
+Max/avg:     21/10.38
+
+Starting probabilistic reachability...
+target=2770, yes=2770, no=0, maybe=6711069
+Starting value iteration (maxmin)...
+Value iteration (maxmin) took 48 iterations and 546.802 seconds.
+Probabilistic reachability took 546.874 seconds.
+
+Value in the initial state: 0.45101746575588053
+
+Time for model checking: 550.534 seconds.
+
+Result: 0.45101746575588053 (value in the initial state)

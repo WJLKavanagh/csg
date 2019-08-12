@@ -1,5 +1,5 @@
 # William Kavanagh, May 2019
-# Extended CSG - Main runnable for 5c RPGLite
+# Extended CSG - Main runnable for 5c3oat (5 character, 3 on a team) RPGLite
 
 """
 1.  For m in M:
@@ -22,7 +22,8 @@
 """
 
 import sys, os, filecmp
-import metagenerator, strategy_generator, model_generator, strategy_updater, strategy_reverse#, final_material_comp
+import metagenerator, strategy_generator, model_generator, strategy_updater, strategy_reverse#, final_material_comp#
+import generate_nd_d_model
 
 def find_result(file):
     # Take a log file, return the value found by MCing.
@@ -53,7 +54,6 @@ output = sys.argv[2]
 print("~~~~~~~~~~~~~~~~")
 k = 0                                   # iterations
 meta_trip = "none"                      # current best strategy is strategy k for pair <meta_pair>
-metagenerator.run(output, config)       # Create the 10 generator models
 best_probability = 0.0
 
 """
@@ -72,19 +72,21 @@ for i in range(len(chars)):
             trips += [chars[i] + chars[j] + chars[m]]
 
 for trip in trips:
-    os.system("prism output/" + trip + "_generator.prism ../../properties/mdp.props \
+    file = output+"/mdp_vs_naive_" + trip + ".prism"
+    generate_nd_d_model.run(trip, config, file)
+    os.system("prism " + file + " ../../properties/mdp.props \
     -prop 1 -exportadvmdp " + output + "/tmp.tra -exportstates " + output + \
-    "/tmp.sta -javamaxmem 5g -nopre -maxiters 300000 > " + output + "/log.txt")
+    "/tmp.sta -javamaxmem 3g -nopre -maxiters 30000 > " + output + "/log.txt")
     probability = float(find_result(output+"/log.txt"))
     print(trip + " can get " + str(probability))
     if probability > best_probability:
         meta_pair = trip
         best_probability = probability
-    transition_count = strategy_generator.run(output, trip, k)
-    print("Strategy generated, there are: " + str(transition_count) + " transitions.\n")
+    codify_strategy = strategy_generator.run(output, trip)
+    print("Strategy generated\n")
 print(meta_pair + " is the meta after " + str(k) + " iterations.\n~~~~~~~~~~~~~~~~")
 k += 1
-
+exit()
 """
 2. For m in M:
         calculate stategy'(p1/m) giving max( Pwin(p1) (strategy'(p1/m),'the meta'))

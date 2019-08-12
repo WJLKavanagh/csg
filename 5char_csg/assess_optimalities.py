@@ -91,7 +91,7 @@ def run(conf):
     if len(good_nodes) > 0: plt.annotate("Non-dominant cycle = \n" + str(good_nodes), xy = (1,-1), color="red")
     else: plt.annotate("Dominant strategy = \n" + evil_nodes[0], xy = (1,-1), color="red")
     plt.savefig("results/graphics/" + conf + "_optimality_relationship.png")      # Save graph to file
-    plt.show()
+    #plt.show()
     print("~~~~~~~~~~~~~~~~")
 
     return(results)

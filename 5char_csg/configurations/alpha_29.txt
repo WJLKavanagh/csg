@@ -1,0 +1,15 @@
+const int Knight_health = 9;
+const int Knight_damage = 4;
+const double Knight_accuracy = 0.029999999999999832;
+
+const int Archer_health = 6;
+const int Archer_damage = 2;
+const double Archer_accuracy = 0.13999999999999996;
+
+const int Wizard_health = 7;
+const int Wizard_damage = 2;
+const double Wizard_accuracy = 0.0799999999999999;
+
+const int Rogue_health = 7;
+const int Rogue_damage = 3;
+const int Rogue_execute = 6;
