@@ -1,7 +1,7 @@
 import generate_nd_moves, os
-import pandas as pd
-import networkx as nx
-import matplotlib.pyplot as plt
+#import pandas as pd
+#import networkx as nx
+#import matplotlib.pyplot as plt
 
 chars = ["K","A","W","R","H"]
 trips = []
@@ -12,13 +12,13 @@ for i in range(len(chars)):
 
 
 def find_result():
-    res = open("output/log.txt","r").readlines()
+    res = open("../output/log.txt","r").readlines()
     for line in res:
         if "Result: " in line:
             return(line.split(" ")[1])
 
 def find_opponents():
-    f = open("output/tmp.tra","r").readlines()
+    f = open("../output/tmp.tra","r").readlines()
     for line in f:
         if "choose" in line:
             return(line.split("_")[1][:-1])
@@ -28,18 +28,20 @@ def run(conf):
     # Returns a dictionary of suggested buffs and nerfs.
     results = {}
     for t in trips:
-        file_name = "output/" + t + "_opt.prism"
+        file_name = "../output/" + t + "_opt.prism"
         generate_nd_moves.run(t, conf, file_name)
     print("Files written")
     for t in trips:
-        file_name = "output/" + t + "_opt.prism"
-        os.system("prism " + file_name + " ../../properties/smg.props \
-        -prop 1 -exportadvmdp output/tmp.tra -exportstates output/tmp.sta > output/log.txt")
+        file_name = "../output/" + t + "_opt.prism"
+        os.system("prism " + file_name + " ../../../properties/smg.props \
+        -prop 1 -exportadvmdp ../output/tmp.tra -exportstates ../output/tmp.sta -javamaxmem 400g -cuddmaxmem 100g -nopre > ../output/log.txt")
         pair_res = find_result()
         opp_pair = find_opponents()
         print(t + ": is countered by " + opp_pair + " which prevents it from doing better than " + str(pair_res)[:7])
         results[t] = {"res":pair_res, "opp":opp_pair}
+    print(results)
 
+"""
     plt.subplots(figsize=(14,14))
 
     G = nx.DiGraph()
@@ -97,5 +99,7 @@ def run(conf):
     print("~~~~~~~~~~~~~~~~")
 
     return(results)
+"""
+
 
 run("delta9")
