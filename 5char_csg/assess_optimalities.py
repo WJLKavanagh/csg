@@ -83,9 +83,9 @@ def run(conf):
     edge_labels=dict([((u,v,),d['weight'])
                  for u,v,d in G.edges(data=True)])
     pos = nx.shell_layout(G)
-    nx.draw(G, pos, with_labels=True, font_weight='bold', node_color=carac['colour_group'].cat.codes, cmap=plt.cm.Set1, draw_network_edge_labels = True, node_size=800)
+    nx.draw(G, pos, with_labels=True, font_weight='bold', node_color=carac['colour_group'].cat.codes, cmap=plt.cm.Set1, draw_network_edge_labels = True, node_size=1500)
 
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=20)
     plt.axis('off')
     plt.title(conf + ": Adversarial probabilities against optimal strategy")
     if len(good_nodes) > 0: plt.annotate("Non-dominant cycle = \n" + str(good_nodes), xy = (1,-1), color="red")
@@ -93,7 +93,7 @@ def run(conf):
     plt.savefig("results/graphics/" + conf + "_optimality_relationship.png")      # Save graph to file
     #plt.show()
     print("~~~~~~~~~~~~~~~~")
-
+    print(results)
     return(results)
 
 #run("delta9")

@@ -8,14 +8,14 @@ const double Archer_accuracy = 0.8699999999999999;
 
 const int Wizard_health = 7;
 const int Wizard_damage = 3;
-const double Wizard_accuracy = 0.5999999999999999;
+const double Wizard_accuracy = 0.6099999999999999;
 
 const int Rogue_health = 6;
 const int Rogue_damage = 3;
 const int Rogue_execute = 6;
-const double Rogue_accuracy = 0.64;
+const double Rogue_accuracy = 0.67;
 
 const int Healer_health = 7;
 const int Healer_damage = 2;
 const int Healer_heal = 2;
-const double Healer_accuracy = 0.7;
+const double Healer_accuracy = 0.71;
