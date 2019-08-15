@@ -4,10 +4,12 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 chars = ["K","A","W","R","H"]
-pairs = []
+trips = []
 for i in range(len(chars)):
     for j in range(i+1,len(chars)):
-        pairs += [chars[i]+chars[j]]
+        for k in range(j+1, len(chars)):
+            trips += [chars[i]+chars[j]+chars[k]]
+
 
 def find_result():
     res = open("output/log.txt","r").readlines()
@@ -22,36 +24,36 @@ def find_opponents():
             return(line.split("_")[1][:-1])
 
 def run(conf):
-    # Takes a configuration, generates models for all pairs and calculates optimal probabilities for them
+    # Takes a configuration, generates models for all trips and calculates optimal probabilities for them
     # Returns a dictionary of suggested buffs and nerfs.
     results = {}
-    for p in pairs:
-        file_name = "output/" + p + "_opt.prism"
-        generate_nd_moves.run(p, conf, file_name)
+    for t in trips:
+        file_name = "output/" + t + "_opt.prism"
+        generate_nd_moves.run(t, conf, file_name)
     print("Files written")
-    for p in pairs:
-        file_name = "output/" + p + "_opt.prism"
+    for t in trips:
+        file_name = "output/" + t + "_opt.prism"
         os.system("prism " + file_name + " ../../properties/smg.props \
         -prop 1 -exportadvmdp output/tmp.tra -exportstates output/tmp.sta > output/log.txt")
         pair_res = find_result()
         opp_pair = find_opponents()
-        print(p + ": is countered by " + opp_pair + " which prevents it from doing better than " + str(pair_res)[:7])
-        results[p] = {"res":pair_res, "opp":opp_pair}
+        print(t + ": is countered by " + opp_pair + " which prevents it from doing better than " + str(pair_res)[:7])
+        results[t] = {"res":pair_res, "opp":opp_pair}
 
     plt.subplots(figsize=(14,14))
 
     G = nx.DiGraph()
 
-    evil_nodes = []         # dominant pairs
-    good_nodes = []         # cycle of effective, non-dominant pairs.
+    evil_nodes = []         # dominant trips
+    good_nodes = []         # cycle of effective, non-dominant trips.
 
-    for p in results.keys():
-        if float(results[p]["res"]) < 0.499 or p != results[p]["opp"]:
-            G.add_edge(results[p]["opp"], p, weight= str(100 - float(results[p]["res"])*100)[:6])
+    for t in results.keys():
+        if float(results[t]["res"]) < 0.499 or p != results[t]["opp"]:
+            G.add_edge(results[t]["opp"], p, weight= str(100 - float(results[t]["res"])*100)[:6])
         else:
-            evil_nodes += [p]
-            G.add_edge(p, p, weight= 0.5)
-            print("Adding:",p)
+            evil_nodes += [t]
+            G.add_edge(t, t, weight= 0.5)
+            print("Adding:",t)
     plt.plot()
 
     #G
@@ -96,4 +98,4 @@ def run(conf):
 
     return(results)
 
-#run("delta9")
+run("delta9")
