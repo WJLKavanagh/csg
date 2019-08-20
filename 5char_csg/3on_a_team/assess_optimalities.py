@@ -1,7 +1,7 @@
 import generate_nd_moves, os
-#import pandas as pd
-#import networkx as nx
-#import matplotlib.pyplot as plt
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
 
 chars = ["K","A","W","R","H"]
 trips = []
@@ -9,7 +9,7 @@ for i in range(len(chars)):
     for j in range(i+1,len(chars)):
         for k in range(j+1, len(chars)):
             trips += [chars[i]+chars[j]+chars[k]]
-
+print(trips)
 
 def find_result():
     res = open("../output/log.txt","r").readlines()
@@ -26,6 +26,7 @@ def find_opponents():
 def run(conf):
     # Takes a configuration, generates models for all trips and calculates optimal probabilities for them
     # Returns a dictionary of suggested buffs and nerfs.
+    """
     results = {}
     for t in trips:
         file_name = "../output/" + t + "_opt.prism"
@@ -33,7 +34,7 @@ def run(conf):
     print("Files written")
     for t in trips:
         file_name = "../output/" + t + "_opt.prism"
-        os.system("prism " + file_name + " ../../../properties/smg.props \
+        os.system("prism " + file_name + " ../../properties/smg.props \
         -prop 1 -exportadvmdp ../output/tmp.tra -exportstates ../output/tmp.sta -javamaxmem 400g -cuddmaxmem 100g -nopre > ../output/log.txt")
         pair_res = find_result()
         opp_pair = find_opponents()
@@ -41,7 +42,9 @@ def run(conf):
         results[t] = {"res":pair_res, "opp":opp_pair}
     print(results)
 
-"""
+    """
+    results = {'KWH': {'res': '0.3864934230574098', 'opp': 'AWH'}, 'KAH': {'res': '0.4999999999937352', 'opp': 'KAH'}, 'AWR': {'res': '0.3456942241711796', 'opp': 'KAH'}, 'WRH': {'res': '0.4272445848815115', 'opp': 'KAH'}, 'KAR': {'res': '0.39102382971455174', 'opp': 'KAH'}, 'KRH': {'res': '0.38342116717797303', 'opp': 'KAH'}, 'KWR': {'res': '0.35308068099544915', 'opp': 'KAH'}, 'KAW': {'res': '0.45101746575588053', 'opp': 'KAH'}, 'AWH': {'res': '0.43857267249808696', 'opp': 'KAH'}, 'ARH': {'res': '0.38764892510739196', 'opp': 'KAH'}}
+
     plt.subplots(figsize=(14,14))
 
     G = nx.DiGraph()
@@ -50,8 +53,8 @@ def run(conf):
     good_nodes = []         # cycle of effective, non-dominant trips.
 
     for t in results.keys():
-        if float(results[t]["res"]) < 0.499 or p != results[t]["opp"]:
-            G.add_edge(results[t]["opp"], p, weight= str(100 - float(results[t]["res"])*100)[:6])
+        if float(results[t]["res"]) < 0.499 or t != results[t]["opp"]:
+            G.add_edge(results[t]["opp"], t, weight= str(100 - float(results[t]["res"])*100)[:6])
         else:
             evil_nodes += [t]
             G.add_edge(t, t, weight= 0.5)
@@ -94,12 +97,12 @@ def run(conf):
     plt.title(conf + ": Adversarial probabilities against optimal strategy")
     if len(good_nodes) > 0: plt.annotate("Non-dominant cycle = \n" + str(good_nodes), xy = (1,-1), color="red")
     else: plt.annotate("Dominant strategy = \n" + evil_nodes[0], xy = (1,-1), color="red")
-    plt.savefig("results/graphics/" + conf + "_optimality_relationship.png")      # Save graph to file
+    plt.savefig("results/graphics/TRIP_" + conf + "_optimality_relationship.png")      # Save graph to file
     plt.show()
     print("~~~~~~~~~~~~~~~~")
 
     return(results)
-"""
+
 
 
 run("delta9")

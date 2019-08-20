@@ -2,6 +2,7 @@ import generate_nd_moves, os
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
+import sys
 
 chars = ["K","A","W","R","H"]
 pairs = []
@@ -97,3 +98,4 @@ def run(conf):
     return(results)
 
 #run("delta9")
+run(sys.argv[1])
